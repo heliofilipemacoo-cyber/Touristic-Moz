@@ -1,0 +1,24 @@
+/* Medias Queres para a pagina index */
+@charset "UTF-8";
+
+
+/* Medias Q */
+/* 
+As Media Q
+
+
+BreakPoints:
+
+mobile - 320 a 480 <---- Ja foi feito no mobile first
+tablet - 481 a 768
+pc - 769 a 1024
+print - 
+tv - 1024 / +
+
+*/
+
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+      
+}
