@@ -1,0 +1,53 @@
+:root {
+    /* Greens */
+    --green-1: #437D6F;
+    --green-2: #31be31;
+    --green-3: ;
+
+
+    /* Int Scales */
+    --size-level-1: 8px;
+    --size-level-2: 12px;
+    --size-level-3: 16px;
+    --size-level-4: 18px;
+
+    /* BackGrounds */
+    --backg-color-contentBody: #E9E9E9;
+
+
+    /* Text */
+    --font-default--font: 16px "Open Sans", sans-serif;
+    --text-default--color: #08231E;
+        /* H's */
+        --h-font-family: "Outfit", sans-serif;
+        --h-default-color: #2b6657;
+}
+
+.header {
+    background: var(--green-1);
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.808);
+}
+h1,
+h2,
+h3 {
+    font-family: var(--h-font-family);
+    color: var(--h-default-color);
+    font-weight: bold;
+    letter-spacing: 1%;
+    text-shadow: 1px 1px 1px #0000005e;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contentBody {
+    background: var(--backg-color-contentBody);
+    font: var(--font-default--font);
+    color: var(--text-default--color);
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
+}

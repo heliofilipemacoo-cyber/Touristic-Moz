@@ -1,37 +1,11 @@
 /* Index All- Mobile first */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
 
+@import url(../consts.css);
 
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.body {
-    background: #E9E9E9 no-repeat;
-    font: 16px "Open Sans", sans-serif;
-    color: #08231E;
+.myLogo{
+    color: var(--green-2);
     display: block;
-    margin: auto;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
-}
-
-.header {
-    background: #437D6F;
-    height: 60px;
-    width: 100vw;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.808);
-}
-
-h1,
-h2,
-h3 {
-    font-family: "Outfit", sans-serif;
-    color: #2A5147;
-    font-weight: bold;
-    letter-spacing: 1%;
-    text-shadow: 1px 1px 1px #0000005e;
 }
 
 h1 {
@@ -43,7 +17,7 @@ h1 {
     display: grid;
     padding: 8px;
     height: 380px;
-    background: #42BDA5 no-repeat;
+    background: #073d28 no-repeat;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.486);
     border-radius: 0px 0px 30px 30px;
 }
@@ -68,24 +42,24 @@ h1 {
 .aboutMoz {
     background: #DEDEDE no-repeat;
     font-size: 1.3rem;
-    padding: 16px;
+    padding: var(--size-level-3);
     border-radius: 0px 0px 30px 30px;
 }
 
-aside{
+aside {
     padding: 16px 0px;
     display: flex;
     flex-flow: row wrap;
 }
 
 .categoria {
-    flex: 1 1 250px;
+    flex: 1 1 225px;
     display: grid;
     align-content: space-between;
     height: 280px;
-    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.568);
-    border-radius: 16px;
-    margin: 18px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.678);
+    border-radius: var(--size-level-3);
+    margin: var(--size-level-4);
     background: #DEDEDE no-repeat;
     overflow: hidden;
 }
@@ -110,38 +84,50 @@ aside .categoria .breveMensagem {
     transition: all .3s;
 }
 
-aside .categoria:hover .breveMensagem{
+aside .categoria:hover .breveMensagem {
     filter: contrast(1.5);
 }
+
 .campoMensagem {
     background: #848484 no-repeat;
 }
 
 a {
     text-decoration: none;
+    display: contents;
 }
 
 
 /* Background Images */
-.hero{
-    background-image: url("../../imagens/umElefanteNaFloresta.jpg");
+.hero {
+    background-image: url("../../imagens/maputo_v_drone.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.categoria#idPovincias{
-    background-image: url("../../imagens/rinoCom1filho.jpg");
+
+.categoria#idPovincias {
+    background-image: url("../../imagens/maputo_v_drone.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
-.categoria#idNatureza{
+
+.categoria#idNatureza {
     background-image: url("../../imagens/duasGanzelas.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.categoria#idMais{
+
+.categoria#idCulinaria {
+    background-image: url("../../imagens/prato.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categoria#idMais {
     background-image: url("../../imagens/elefanteVermelho.jpg");
     background-repeat: no-repeat;
     background-size: cover;
