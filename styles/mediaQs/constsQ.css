@@ -1,31 +1,40 @@
-/* Medias Queres para a pagina index */
+/* Consts Media Q */
 @charset "UTF-8";
-@import url(constsQ.css);
+@import url(/styles/consts.css);
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     /* Tablets */
+    ::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+    }
     * {
         font-size: 1.08em;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1444px) {
-
-    /* Pc */
-    /* h1 {
-        font-size: 3.5rem;
-        display: block;
-    } */
-
-    * {
-        font-size: 1.10em;
     }
 
     .contentBody {
         max-width: 1008px;
         margin: 0 auto;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1444px) {
+
+    /* Pc */
+    ::-webkit-scrollbar {
+        height: 14px;
+        width: 14px;
+    }
+    * {
+        font-size: 1.1em;
+    }
+
+    .contentBody {
+        max-width: 1008px;
+        margin: 0 auto;
+        margin-bottom: 0px;
     }
 }
 
@@ -37,6 +46,10 @@
 @media screen and (min-width: 1444px) {
 
     /* Tv/+ */
+    ::-webkit-scrollbar {
+        height: 16px;
+        width: 16px;
+    }
     * {
         font-size: 1.12em;
     }
@@ -44,5 +57,7 @@
     .contentBody {
         max-width: 1008px;
         margin: 0 auto;
+        margin-bottom: 0px;
     }
+
 }

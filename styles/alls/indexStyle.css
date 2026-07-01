@@ -9,13 +9,13 @@
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
     display: block;
 }
 
 .hero {
     display: grid;
-    padding: 8px;
+    padding: 6px;
     height: 380px;
     background: #073d28 no-repeat;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.486);
@@ -25,7 +25,7 @@ h1 {
 .hero p {
     font-size: 1.5rem;
     align-self: end;
-    padding: 4px;
+    padding: 2px;
     color: #FFFFFF;
 }
 
@@ -36,7 +36,10 @@ h1 {
 }
 
 .intro p {
-    padding: 8px;
+    margin-bottom: 14px;
+}
+.intro p::after {
+    content: ".";
 }
 
 .aboutMoz {
@@ -47,7 +50,7 @@ h1 {
 }
 
 aside {
-    padding: 16px 0px;
+    padding: 14px 0px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -66,7 +69,8 @@ aside {
 
 aside .categoria h2 {
     font-size: 2.4rem;
-    padding: 16px;
+    padding: 14px;
+    color: #FFF;
     align-self: start;
     justify-self: start;
     transition-timing-function: ease;
@@ -78,7 +82,7 @@ aside .categoria .breveMensagem {
     line-height: 1.1rem;
     letter-spacing: .025rem;
     font-size: .9rem;
-    padding: 12px;
+    padding: 10px;
     background-color: rgba(48, 48, 48, 0.75);
     transition-timing-function: ease;
     transition: all .3s;

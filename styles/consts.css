@@ -1,9 +1,10 @@
 :root {
     /* Greens */
     --green-1: #437D6F;
-    --green-2: #31be31;
-    --green-3: ;
-
+    --green-2: #30cf30;
+    --green-3: #0b3029;
+    --green-4-solf: #174e43;
+    --green-4-dark: #0a2c26;
 
     /* Int Scales */
     --size-level-1: 8px;
@@ -14,21 +15,30 @@
     /* BackGrounds */
     --backg-color-contentBody: #E9E9E9;
 
-
     /* Text */
     --font-default--font: 16px "Open Sans", sans-serif;
     --text-default--color: #08231E;
-        /* H's */
-        --h-font-family: "Outfit", sans-serif;
-        --h-default-color: #2b6657;
+
+    /* H's */
+    --h-font-family: "Outfit", sans-serif;
+    --h-default-color: #2b6657;
+
 }
 
 .header {
-    background: var(--green-1);
+    background: var(--green-4-solf);
     height: 60px;
     width: 100%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.808);
 }
+
+.footer {
+    background: var(--green-4-solf);
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.808);
+}
+
 h1,
 h2,
 h3 {
@@ -38,9 +48,15 @@ h3 {
     letter-spacing: 1%;
     text-shadow: 1px 1px 1px #0000005e;
 }
+
+html {
+    background-color: var(--green-1);
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .contentBody {
@@ -49,5 +65,34 @@ h3 {
     color: var(--text-default--color);
     display: block;
     margin: auto;
+    margin-bottom: 0px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
 }
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: var(--size-level-4);
+    box-shadow: inset 2px 2px 3px black;
+    background-color: var(--text-default--color);
+    border-left: 1px solid var(--green-1);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: var(--size-level-1);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #255a4d6e;
+}
+
+
+
+/* /////////////////////////////////////  Buld 1 */
