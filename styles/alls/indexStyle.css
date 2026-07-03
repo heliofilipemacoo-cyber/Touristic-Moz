@@ -3,7 +3,7 @@
 
 @import url(../consts.css);
 
-.myLogo{
+.myLogo {
     color: var(--green-2);
     display: block;
 }
@@ -13,13 +13,23 @@ h1 {
     display: block;
 }
 
+header {
+    background-color: #DEDEDE;
+    box-shadow: inset 1px 8px 4px rgba(0, 0, 0, 0.747);
+}
+main{
+    
+}
+
 .hero {
     display: grid;
     padding: 6px;
     height: 380px;
+    max-width: 1008px;
+    margin: 0 auto;
     background: #073d28 no-repeat;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.486);
     border-radius: 0px 0px 30px 30px;
+    box-shadow: inset 2px -4px 4px rgba(114, 114, 114, 0.5);
 }
 
 .hero p {
@@ -27,6 +37,7 @@ h1 {
     align-self: end;
     padding: 2px;
     color: #FFFFFF;
+    font-family: var(--font-default--font);
 }
 
 .intro {
@@ -38,11 +49,14 @@ h1 {
 .intro p {
     margin-bottom: 14px;
 }
+
 .intro p::after {
     content: ".";
 }
 
 .aboutMoz {
+    box-shadow: inset 2px -4px 2px rgba(0, 0, 0, 0.384);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.445);
     background: #DEDEDE no-repeat;
     font-size: 1.3rem;
     padding: var(--size-level-3);
