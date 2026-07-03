@@ -23,7 +23,7 @@ main{
 
 .hero {
     display: grid;
-    padding: 6px;
+    padding: 10px;
     height: 380px;
     max-width: 1008px;
     margin: 0 auto;
@@ -34,8 +34,9 @@ main{
 
 .hero p {
     font-size: 1.5rem;
+    max-inline-size: 280px;
     align-self: end;
-    padding: 2px;
+    padding: 4px;
     color: #FFFFFF;
     font-family: var(--font-default--font);
 }
@@ -118,28 +119,28 @@ a {
 
 /* Background Images */
 .hero {
-    background-image: url("../../imagens/maputo_v_drone.jpg");
+    background-image: url("../../imagens/new/maputoCidade.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .categoria#idPovincias {
-    background-image: url("../../imagens/maputo_v_drone.jpg");
+    background-image: url("../../imagens/new/praca-da-independencia-maputo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom right;
 }
 
 .categoria#idNatureza {
-    background-image: url("../../imagens/duasGanzelas.jpg");
+    background-image: url("../../imagens/new/river.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center left;
 }
 
 .categoria#idCulinaria {
-    background-image: url("../../imagens/prato.jpeg");
+    background-image: url("../../../imagens/new/rajas_temperos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
