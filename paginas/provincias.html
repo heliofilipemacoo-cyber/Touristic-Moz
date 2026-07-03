@@ -116,14 +116,14 @@
 <body>
       <header>
             <div class="naving"></div>
+
       </header>
       <div class="contentBody">
             <main>
                   <div class="titleHero">
                   <h2>Provincias</h2>
                   
-                  <p>Moçambique possuí 12 províncias, divididas em regiões (Norte, Centro e Sul), todas com diversas
-                        línguas e culturas.</p>
+                  <p>Moçambique possuí 12 províncias.</p>
             </div>
             <section class="aboutTitle">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio tempore! Debitis ipsum cum assumenda officiis vero consequatur nemo sit, at est saepe facere reiciendis repudiandae molestias accusamus repellendus iusto!</p>
@@ -170,13 +170,9 @@
 <script>
       var i = 1;
       for (let index = 0; index < 6; index++) {
-            var lc = document.getElementById(`lc`+i);
-            lc.innerHTML += '<div class="teste"></div>'
-            if (i < 3) {
-                  i++;
-                  continue; 
-            }
-            i = 1;
+            document.getElementById(`lc1`).innerHTML += `<div class="teste">T1: ${index}</div>`;
+            document.getElementById(`lc2`).innerHTML += `<div class="teste">T2: ${index}</div>`;
+            document.getElementById(`lc3`).innerHTML += `<div class="teste">T3: ${index}</div>`;
       }
 </script>
 
