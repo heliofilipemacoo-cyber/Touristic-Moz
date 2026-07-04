@@ -1,87 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Provincias</title>
+      <title>Touristic Moz - Provinces</title>
       <link rel="stylesheet" href="../styles/consts.css" media="all">
       <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
       <style>
             @import url(../styles/consts.css);
             @import url(../styles/mediaQs/constsQ.css);
-            .myLogo{
+
+            .myLogo {
                   color: var(--green-2);
                   display: block;
             }
 
+            header {
+                  background-color: #DEDEDE;
+                  max-width: 1008px;
+                  margin: 0 auto;
+                  box-shadow: inset 1px 8px 4px rgba(0, 0, 0, 0.747);
+            }
+
             .titleHero {
-            display: grid;
-            padding: 8px;
-            height: 280px;
-            background: #073d28 no-repeat;
-            border-radius: 0px 0px 30px 30px;
+                  padding: 10px;
+                  height: 280px;
+                  display: grid;
+                  max-width: 1008px;
+                  margin: 0 auto;
+                  background: #073d28 no-repeat;
+                  border-radius: 0px 0px 30px 30px;
+                  box-shadow: inset 2px -4px 4px rgba(114, 114, 114, 0.5);
             }
 
             .titleHero h2 {
-            font-size: 2.5rem;
+                  font-size: 2.5rem;
             }
 
             .titleHero p {
-            font-size: 1.5rem;
-            align-self: end;
-            padding: 4px;
-            text-shadow: 1px 1px 1px #000000;
-            color: #FFFFFF;
+                  align-self: end;
+                  padding: 4px;
+                  color: #FFFFFF;
+                  font: var(--font-default--font);
+                  font-size: 1.5rem;
             }
 
             .contentBody {
-            background: #DEDEDE no-repeat;
+                  background: #DEDEDE no-repeat;
             }
 
             .contentBody p {
-            padding: 6px;
+                  padding: 6px;
             }
 
             .aboutTitle {
-            background: #DEDEDE no-repeat;
-            font-size: 1.2rem;
-            padding: var(--size-level-1);
-            border-radius: 0px 0px 30px 30px;
+                  box-shadow: inset 2px -4px 2px rgba(0, 0, 0, 0.384);
+                  background: #DEDEDE no-repeat;
+                  font-size: 1.2rem;
+                  padding: var(--size-level-1);
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+                  border-radius: 0px 0px 30px 30px;
             }
 
             aside {
-            padding: 14px 0px;
-            display: flex;
-            flex-flow: row wrap;
+                  padding: 14px 0px;
+                  display: flex;
+                  flex-flow: row wrap;
             }
 
             a {
-            text-decoration: none;
-            display: contents;
+                  text-decoration: none;
+                  display: contents;
             }
-            .mainNavList{
+
+            .mainNavList {
                   padding: var(--size-level-1) 0px;
                   background-color: transparent;
-                  gap: 20px;
+                  gap: 25px;
                   width: 100%;
                   display: flex;
                   justify-content: space-between;
                   flex-flow: column nowrap;
                   flex: 0 1 content;
-                  padding: 2px;
             }
-            .lines{
+
+            .lines {
                   background-color: #042519;
                   border-radius: 2px;
                   overflow: hidden;
             }
-            .lines_title{
+
+            .lines_title {
                   padding: var(--size-level-1);
                   color: #0e7e55;
                   display: block;
             }
-            .lines_content{
+
+            .lines_content {
                   overflow-x: auto;
                   overflow-y: hidden;
                   width: 100%;
@@ -89,85 +105,101 @@
                   height: fit-content;
                   display: flex;
             }
-            .lines_content{
-                  
-            }
-            .MoreContent{
+
+            .lines_content {}
+
+            .MoreContent {
                   font-size: 1.2rem;
                   padding: var(--size-level-1);
             }
 
-            .lines_content .teste{
+            .lines_content .teste {
                   margin: var(--size-level-1);
                   min-height: 200px;
                   min-width: 260px;
                   background-color: #8b8b8b3b;
             }
-            .teste{
+
+            .teste {
                   display: flex;
                   flex-flow: column nowrap;
                   justify-content: space-between;
             }
 
             /* Background Images */
-            .titleHero{
+            .titleHero {
                   background-image: url(/imagens/new/praca-da-independencia-maputo.jpg);
                   background-repeat: no-repeat;
                   background-size: cover;
-                  background-position: bottom right;
+                  background-position: top right;
                   border-radius: 0 0 30px 30px;
             }
       </style>
 </head>
 
 <body>
+      <nav class="naving"></nav>
       <header>
-            <div class="naving"></div>
+            <div class="titleHero">
+                  <h2>Provincias</h2>
+
+                  <p>Moçambique possuí 12 províncias.</p>
+            </div>
       </header>
       <div class="contentBody">
             <main>
-            <div class="titleHero">
-                  <h2>Provincias</h2>
-                  
-                  <p>Moçambique possuí 12 províncias.</p>
-            </div>
-            <section class="aboutTitle">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio tempore! Debitis ipsum cum assumenda officiis vero consequatur nemo sit, at est saepe facere reiciendis repudiandae molestias accusamus repellendus iusto!</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, vitae neque itaque accusamus ipsum ratione. Animi laboriosam amet est, dicta esse cumque, tenetur consequatur natus aspernatur officiis incidunt reprehenderit! Animi.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid porro aut dolore earum vitae sequi, culpa incidunt mollitia blanditiis, quibusdam magnam nemo quos cupiditate officia voluptatibus quas cumque minima iste?</p>
-            </section>
+                  <section class="aboutTitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio tempore! Debitis ipsum
+                              cum assumenda officiis vero consequatur nemo sit, at est saepe facere reiciendis
+                              repudiandae molestias accusamus repellendus iusto!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, vitae neque itaque
+                              accusamus ipsum ratione. Animi laboriosam amet est, dicta esse cumque, tenetur consequatur
+                              natus aspernatur officiis incidunt reprehenderit! Animi.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid porro aut dolore earum
+                              vitae sequi, culpa incidunt mollitia blanditiis, quibusdam magnam nemo quos cupiditate
+                              officia voluptatibus quas cumque minima iste?</p>
+                  </section>
             </main>
             <aside>
-                  <div class="mainNavList">
-                        <div class="lines">
+                  <section class="mainNavList">
+                        <ul class="lines">
                               <h2 class="lines_title">Zona Norte</h2>
                               <div class="lines_content" id="lc1">
                                     <!-- Aqui ficam conteudos de cada line -->
-                                    <div class="teste"></div>
-                              </div>
-                        </div>
 
-                        <div class="lines">
+                                    <li class="teste"></li>
+                              </div>
+                        </ul>
+
+                        <ul class="lines">
                               <h2 class="lines_title">Zona Centro</h2>
                               <div class="lines_content" id="lc2">
-                                    <!-- Aqui ficam conteudos de cada line -->
-                                    <div class="teste"></div>
-                              </div>
-                        </div>
 
-                        <div class="lines">
-                              <h2 class="lines_title">Zona Sul</h2>
-                              <div class="lines_content" id="lc3">
-                                    <div class="teste"></div>
+
+                                    <li class="teste"></li>
                               </div>
-                        </div>
-                  </div>
+                        </ul>
+
+                        <ul class="lines">
+                              <h2 class="lines_title">Zona Sul</h2>
+
+                              <div class="lines_content" id="lc3">
+
+                                    <li class="teste"></li>
+
+                              </div>
+                        </ul>
+                  </section>
             </aside>
-            <div class="MoreContent">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusamus dolores in dignissimos error, ab perspiciatis, dicta officiis architecto obcaecati quibusdam sit, voluptate molestias quas similique. Beatae excepturi possimus cumque?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus magni pariatur reiciendis, expedita eum voluptates exercitationem eius possimus culpa corporis numquam a porro ab earum, molestiae neque, assumenda impedit!</p>
+            <footer class="MoreContent">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusamus dolores in dignissimos
+                        error, ab perspiciatis, dicta officiis architecto obcaecati quibusdam sit, voluptate molestias
+                        quas similique. Beatae excepturi possimus cumque?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus magni pariatur reiciendis,
+                        expedita eum voluptates exercitationem eius possimus culpa corporis numquam a porro ab earum,
+                        molestiae neque, assumenda impedit!</p>
                   <!-- O veja tambem -->
-            </div>
+            </footer>
       </div>
       <footer class="footer">
 
