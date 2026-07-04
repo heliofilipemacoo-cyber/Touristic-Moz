@@ -3,6 +3,7 @@
     --green-1: #437D6F;
     --green-2: #30cf30;
     --green-3: #0b3029;
+    --green-1-hover: #4d9987;
     --green-4-solf: #174e43;
     --green-4-dark: #0a2c26;
 
@@ -22,7 +23,13 @@
     /* H's */
     --h-font-family: "Outfit", sans-serif;
     --h-default-color: #2b6657;
+}
 
+section p {
+    margin-top: 12px;
+}
+section p:last-of-type {
+    margin-bottom: 40px;
 }
 
 .naving {
@@ -54,6 +61,7 @@ html {
 }
 
 * {
+    list-style: none;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -67,8 +75,7 @@ html {
     box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.747);
     display: block;
     overflow: hidden;
-    /* padding: 0px 2px; */
-    max-width: 1008px;
+    max-width: 908px;
     margin: 0 auto;
 }
 
