@@ -24,7 +24,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+h4::before {
+    content: "• ";
 }
 
 header {
@@ -33,16 +38,15 @@ header {
 }
 
 .fastNaving.showShortCut {
-    opacity: .92;
+    opacity: .94;
     box-shadow: 1px 4px 4px #0000007D;
     border: 1px solid black;
-    background-color: var(--green-1);
-    color: black;
+    background-color: #272727;
     transform: translateY(0px);
 }
 
 .fastNaving.showShortCut:hover {
-    background-color: var(--green-1-hover);
+    background-color: #303030;
     opacity: 1;
 }
 
@@ -53,11 +57,11 @@ header {
     position: fixed;
     font-weight: bolder;
     z-index: 999;
-    right: 14px;
-    bottom: 14px;
-    width: 46px;
-    height: 46px;
-    padding: 14px;
+    right: 12px;
+    bottom: 12px;
+    width: 55px;
+    height: 55px;
+    padding: 18px;
     border-radius: 100%;
     transition: all .3s;
     color: transparent;
@@ -103,6 +107,9 @@ header {
     list-style-type: decimal;
     font-size: .7em;
 }
+.plus_content ul{
+    font-size: 1.4em;
+}
 
 .plus_content ol {
     margin-top: 5px;
@@ -141,7 +148,7 @@ header {
     padding: 4px;
     font-weight: bold;
     color: #353d3b;
-    text-shadow: 1px 1px 1px #FFDE5A;
+    text-shadow: -1px -1px 2px #F0CB66;
     font-family: var(--font-default--font);
 }
 

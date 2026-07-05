@@ -25,8 +25,12 @@
     --h-default-color: #2b6657;
 }
 
+section{
+    margin-bottom: 30px;
+}
+
 section p {
-    margin-top: 12px;
+    margin-top: 8px;
 }
 section p:last-of-type {
     margin-bottom: 40px;
@@ -48,7 +52,8 @@ section p:last-of-type {
 
 h1,
 h2,
-h3 {
+h3,
+h4{
     font-family: var(--h-font-family);
     color: var(--h-default-color);
     font-weight: bold;
