@@ -63,7 +63,7 @@ header {
     transform: translateY(60px);
 }
 
-.map_iframe{
+.map_iframe {
     outline: 3px groove var(--green-1);
     max-height: 360px;
     border-radius: 8px;
@@ -73,36 +73,50 @@ header {
     background-color: #353d3b6c;
 }
 
-.img_description{
+.img_description {
     display: block;
     margin-right: 8px;
     text-align: right;
     font-size: .6em;
 }
-.img_description a{
+
+.img_description a {
     display: inline-block;
     text-decoration: underline;
     font-size: 1em;
 }
-.showMore::after{
-    content: " +";
-}
-.showMore{
+
+.showMore {
+    cursor: pointer;
     font-size: .6em;
+    text-decoration: underline;
 }
-.plus_content li{
+
+
+
+.plus_content li {
     margin-left: 35px;
     list-style-type: decimal;
-    font-size: .85em;
+    font-size: .7em;
 }
-.plus_content ol{
+
+.plus_content ol {
     margin-top: 5px;
 }
-.plus_content img{
+
+.plus_content{
+    display: none;
+}
+
+.plus_content.show{
+    display: block;
+}
+
+.plus_content img, .plus_content iframe {
+    margin-top: 18px;
     width: 100%;
     border-radius: 8px;
     outline: 3px groove var(--green-1);
-    height: auto;
 }
 
 .hero {
@@ -125,27 +139,23 @@ header {
     font-family: var(--font-default--font);
 }
 
-/* .intro {
-    margin-bottom: 15px;
-    border-radius: 0px 0px 30px 30px;
-    background: #DEDEDE no-repeat;
-}
-
-.intro p {
-    margin-bottom: 14px;
-}
-
-.intro p::after {
-    content: ".";
-} */
-
 .mainAboutMoz {
     box-shadow: inset 2px -4px 2px rgba(0, 0, 0, 0.384);
     border-bottom: 1px solid rgba(0, 0, 0, 0.445);
     background: #DEDEDE no-repeat;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: var(--size-level-3);
     border-radius: 0px 0px 30px 30px;
+}
+
+ol {
+    margin-top: 18px;
+}
+ol>li{
+    line-height: 1.1em;
+}
+ol > li::before{
+    content: "» ";
 }
 
 aside {
@@ -164,6 +174,12 @@ aside {
     margin: var(--size-level-4);
     background: #DEDEDE no-repeat;
     overflow: hidden;
+}
+
+.categoria p:last-of-type {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin: 4px;
 }
 
 aside .categoria h2 {
@@ -219,7 +235,7 @@ a {
     font-size: .9em;
     color: #073d28;
     display: inline-block;
-    transition: font-weight .3s;
+    transition: font-weight .3s ease;
 }
 
 .pageNav a:hover {
@@ -233,6 +249,21 @@ a {
 
 .pageNav .subTitles {
     padding-left: 18px;
+}
+
+.important{
+    background-color: #434645;
+    color: #DEDEDE;
+    border-radius: 24px;
+    border-end-start-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow: 2px 2px 6px black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.important strong{
+    color: rgb(255, 33, 33);
+    text-rendering: geometricPrecision;
 }
 
 
