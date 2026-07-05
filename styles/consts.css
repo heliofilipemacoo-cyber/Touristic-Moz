@@ -53,7 +53,8 @@ section p:last-of-type {
 h1,
 h2,
 h3,
-h4{
+h4, 
+h5{
     font-family: var(--h-font-family);
     color: var(--h-default-color);
     font-weight: bold;

@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Table</title>
+    <link rel="stylesheet" href="../styles/consts.css" all>
+    <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
+
+    <link rel="stylesheet" href="../styles/alls/indexStyle.css">
+
+    <link rel="stylesheet" href="../styles/alls/rootsTableStyle.css">
+    <link rel="stylesheet" href="../styles/mediaQs/MQrootsTableStyle.css">
+    <style>
+        body{
+            overflow: auto;
+        }
+        .contentBody{
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            overflow: auto;
+        }
+        .rootTable{
+            width: 100%;
+            overflow: auto;
+            min-width: 960px;
+            background-color: rgb(97, 97, 97);
+            color: aliceblue;
+        }
+        td{
+            padding: 8px 0px;
+            text-align: center;
+        }
+        th{
+            padding: 6px 0px;
+            text-align: center;
+        }
+        .rootTable tr:nth-child(even) {
+            background-color: #252e27;
+            color: #afdbba;
+        }
+        .rootTable tr:nth-child(odd) {
+            background-color: #afdbba;
+            color: #252e27;
+        }
+        .theader{
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+        main{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="naving"></nav>
+      <header>
+
+      </header>
+        <div class="contentBody">
+            <main>
+                <table class="rootTable">
+                    <tr class="theader">
+                        <th>Origin City</th>
+                        <th>Coutry</th>
+                        <th>Airline</th>
+                        <th>Flight time</th>
+                        <th>Frequency</th>
+                    </tr>
+                    <tr>
+                        <td>Root 1</td>
+                        <td>Meaning 1</td>
+                    </tr>
+                    <tr>
+                        <td>Root 2</td>
+                        <td>Meaning 2</td>
+                    </tr>
+                    <tr>
+                        <td>Root 3</td>
+                        <td>Meaning 3</td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+            </main>
+        </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
