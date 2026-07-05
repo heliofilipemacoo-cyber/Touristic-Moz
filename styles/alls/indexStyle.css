@@ -65,7 +65,9 @@ header {
 }
 
 .map_iframe {
-    outline: 3px groove var(--green-1);
+    box-shadow: inset 0px 0px 8px #00000075;
+    outline: 2px solid #073d28;
+    border: 2px solid var(--green-1);
     max-height: 360px;
     border-radius: 8px;
     margin: 0px auto;
@@ -89,7 +91,8 @@ header {
 
 .showMore {
     cursor: pointer;
-    font-size: .6em;
+    color: var(--h-default-color);
+    font-size: 1rem;
     text-decoration: underline;
 }
 
@@ -114,10 +117,12 @@ header {
 }
 
 .plus_content img, .plus_content iframe {
+    box-shadow: inset 0px 0px 4px #00000075;
     margin: 18px 0px 0px;
     width: 100%;
     border-radius: 8px;
-    outline: 3px groove var(--green-1);
+    outline: 2px solid #073d28;
+    border: 2px solid var(--green-1);
 }
 
 .hero {
@@ -154,7 +159,7 @@ ol {
 }
 ol>li{
     line-height: 1.1em;
-    font-size: .9em;
+    margin-bottom: 18px;
 }
 ol > li::before{
     content: "» ";
@@ -220,10 +225,10 @@ a {
 .pageNav {
     margin: 40px 0px;
     border-radius: 8px;
-    border: 2px solid var(--green-1);
     padding: 8px;
     padding-top: 0;
     outline: 2px solid #073d28;
+    border: 2px solid var(--green-1);   
     font-family: var(--h-font-family);
 }
 
@@ -254,17 +259,24 @@ a {
 }
 
 .important{
+    max-width: 660px;
     margin: 20px 0px;
     background-color: #434645;
     color: #DEDEDE;
     border-radius: 22px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.57);
+    border-end-start-radius: 0px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.57);
     padding: 18px;
     box-sizing: border-box;
 }
 .important strong{
     color: #FFB01F;
     text-rendering: geometricPrecision;
+}
+.important a{
+    display: inline-block;
+    color: #FFB01F;
+    text-decoration: underline;
 }
 
 
