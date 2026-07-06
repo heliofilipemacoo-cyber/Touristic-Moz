@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Table</title>
+    <link rel="stylesheet" href="../styles/consts.css" all>
+    <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
+    
+    <link rel="stylesheet" href="../styles/alls/indexStyle.css">
+    
+    <link rel="stylesheet" href="../styles/alls/rootsTableStyle.css">
+    <link rel="stylesheet" href="../styles/mediaQs/MQrootsTableStyle.css">
+    <style>
+        body {
+            overflow: auto;
+        }
+        
+        .contentBody {
+            
+        }
+        
+        .flight-table {
+            width: 100%;
+            overflow: auto;
+            background-color: #424242;
+        }
+        .important{
+            font-size: 1.6rem;
+        }
+        
+        td {
+            padding: 8px 0px;
+            text-align: center;
+        }
+        
+        th {
+            padding: 6px 4px;
+            min-width: 140px;
+            text-align: center;
+        }
+        
+        .flight-table th {
+            background-color: #D1BC18;
+            color: #2F2F2F;
+        }
+        
+        .flight-table tr:nth-child(even) {
+            background-color: #BEBEBE;
+            color: #343434;
+        }
+        
+        .flight-table tr:nth-child(odd) {
+            background-color: #5D5D5D;
+            color: #D3D3D3;
+        }
+        
+        .theader {
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+        
+        h2 {
+            font-size: 2.6rem;
+        }
+        
+        .table-container {
+            overflow: auto;
+            margin: 22px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="naving"></nav>
+    <header>
+        
+    </header>
+    <main>
+        <div class="table-container">
+            <table class="flight-table">
+                <thead>
+                    <tr>
+                        <th>Departure City</th>
+                        <th>Country</th>
+                        <th>Departure Airport</th>
+                        <th>Destination Airport</th>
+                        <th>Airline(s)</th>
+                        <th>Direct Flight</th>
+                        <th>Approximate Flight Time</th>
+                        <th>Frequency</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lisbon</td>
+                        <td>Portugal</td>
+                        <td>LIS</td>
+                        <td>Maputo (MPM)</td>
+                        <td>TAP Air Portugal</td>
+                        <td>Yes</td>
+                        <td>11 h</td>
+                        <td>3 times per week</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Doha</td>
+                        <td>Qatar</td>
+                        <td>DOH</td>
+                        <td>Maputo (MPM)</td>
+                        <td>Qatar Airways</td>
+                        <td>Yes</td>
+                        <td>8 h</td>
+                        <td>Daily</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Addis Ababa</td>
+                        <td>Ethiopia</td>
+                        <td>ADD</td>
+                        <td>Maputo (MPM)</td>
+                        <td>Ethiopian Airlines</td>
+                        <td>Yes</td>
+                        <td>5 h 20 min</td>
+                        <td>Daily</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Johannesburg</td>
+                        <td>South Africa</td>
+                        <td>JNB</td>
+                        <td>Maputo (MPM)</td>
+                        <td>Airlink, LAM</td>
+                        <td>Yes</td>
+                        <td>1 h 10 min</td>
+                        <td>Multiple flights per day</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Cape Town</td>
+                        <td>South Africa</td>
+                        <td>CPT</td>
+                        <td>Maputo (MPM)</td>
+                        <td>Airlink</td>
+                        <td>Yes</td>
+                        <td>2 h 50 min</td>
+                        <td>Daily</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Durban</td>
+                        <td>South Africa</td>
+                        <td>DUR</td>
+                        <td>Maputo (MPM)</td>
+                        <td>Airlink</td>
+                        <td>Yes</td>
+                        <td>1 h 10 min</td>
+                        <td>Several times per week</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Luanda</td>
+                        <td>Angola</td>
+                        <td>LAD</td>
+                        <td>Maputo (MPM)</td>
+                        <td>TAAG Angola Airlines</td>
+                        <td>Yes</td>
+                        <td>4 h</td>
+                        <td>Several times per week</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Harare</td>
+                        <td>Zimbabwe</td>
+                        <td>HRE</td>
+                        <td>Maputo (MPM)</td>
+                        <td>LAM</td>
+                        <td>Yes</td>
+                        <td>1 h 40 min</td>
+                        <td>Several times per week</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="important">
+                <strong>Note:</strong> Flight times and frequencies are approximate and may change throughout the year. Please check with the airline before planning your trip.
+            </p>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
