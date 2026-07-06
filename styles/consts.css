@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
+
 :root {
     /* Greens */
     --green-1: #437D6F;
@@ -18,7 +19,6 @@
     --backg-color-contentBody: #E9E9E9;
 
     /* Text */
-    --font-default--font: 14px "Open Sans", sans-serif;
     --text-default--color: #08231E;
 
     /* H's */
@@ -26,15 +26,20 @@
     --h-default-color: #2b6657;
 }
 
-section{
+section {
     margin-bottom: 30px;
 }
 
 section p {
     margin-top: 8px;
 }
+
 section p:last-of-type {
     margin-bottom: 40px;
+}
+
+section p:first-of-type {
+    margin-bottom: 0px;
 }
 
 .naving {
@@ -54,14 +59,16 @@ section p:last-of-type {
 h1,
 h2,
 h3,
-h4, 
-h5{
+h4,
+h5 {
     font-family: var(--h-font-family);
     color: var(--h-default-color);
+    text-transform: capitalize;
     font-weight: bold;
     letter-spacing: 1%;
     text-shadow: 1px 1px 1px #0000005e;
 }
+
 h1 {
     font-size: 3rem;
     display: block;
@@ -73,7 +80,7 @@ h2 {
 
 h3 {
     font-size: 1.4em;
-    margin-top: 18px;
+    margin-top: 16px;
     margin-bottom: 8px;
 }
 
@@ -82,12 +89,15 @@ h4 {
     margin-top: 18px;
     margin-bottom: 0px;
 }
+
 h4::before {
     content: "• ";
 }
+
 h5::before {
     content: "» ";
 }
+
 h5 {
     font-size: 1em;
     margin-top: 16px;
@@ -98,17 +108,30 @@ html {
     background-color: var(--green-1);
 }
 
+body {
+    font-size: 1.025em;
+    font-family: "Open Sans", sans-serif;
+}
+ul{
+    font-size: 1.010em;
+}
+strong{
+    font-size: 1.05em;
+}
+li {
+    font-size: 1.025em;
+    font-family: "Open Sans", sans-serif;
+}
+
 * {
     list-style: none;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: var(--font-default--font);
 }
 
 .contentBody {
     background: var(--backg-color-contentBody);
-    font: var(--font-default--font);
     color: var(--text-default--color);
     box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.747);
     display: block;
