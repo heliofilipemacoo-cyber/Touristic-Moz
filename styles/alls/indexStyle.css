@@ -1,5 +1,8 @@
 /* Index All- Mobile first */
 
+html{
+    scroll-behavior: smooth;
+}
 @import url(../consts.css);
 
 .myLogo {
