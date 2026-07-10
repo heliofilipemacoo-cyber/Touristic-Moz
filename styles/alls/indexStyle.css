@@ -10,8 +10,6 @@ html{
     display: block;
 }
 
-
-
 header {
     background-color: #DEDEDE;
     box-shadow: inset 1px 8px 4px rgba(0, 0, 0, 0.747);
@@ -31,9 +29,8 @@ header {
 }
 
 .fastNaving {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     position: fixed;
     font-weight: bolder;
     z-index: 999;
@@ -55,7 +52,6 @@ header {
     max-height: 360px;
     border-radius: 8px;
     margin: 0px auto;
-    color: red;
     width: 98%;
     background-color: #353d3b6c;
 }
@@ -74,10 +70,21 @@ header {
 }
 
 .showMore {
+    margin: 8px 0px;
     cursor: pointer;
-    color: var(--h-default-color);
-    font-size: 1rem;
-    text-decoration: underline;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--backg-color-contentBody);
+    border: none;
+    background-color: var(--green-2);
+    font-size: 1.15rem;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.showMore:hover{
+    box-shadow: 1px 2px 4px #0000004F;
+    transform: translateY(-6px);
+    transform: translateX(-1px);
 }
 
 .plus_content {
@@ -260,28 +267,28 @@ strong {
 
 /* Background Images */
 .hero {
-    background-image: url("../../imagens/new/beach_moz_long.webp");
+    background-image: url("../../imagens/beach_moz_long.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .categoria#idPovincias {
-    background-image: url("../../imagens/new/praca-da-independencia-maputo.webp");
+    background-image: url("../../imagens/praca-da-independencia-maputo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
 }
 
 .categoria#idNatureza {
-    background-image: url("../../imagens/new/river.webp");
+    background-image: url("../../imagens/river.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
 }
 
 .categoria#idCulinaria {
-    background-image: url("../../imagens/new/rajas_temperos.webp");
+    background-image: url("../../imagens/rajas_temperos.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
