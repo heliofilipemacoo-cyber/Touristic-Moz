@@ -115,7 +115,7 @@ header {
     font-weight: bold;
     color: #353d3b;
     text-shadow: -1px -1px 2px #F0CB66;
-    font-family: var(--font-default--font);
+    font-family: var(--h-font-family);
 }
 
 .mainAboutMoz {
@@ -260,35 +260,35 @@ strong {
 
 /* Background Images */
 .hero {
-    background-image: url("../../imagens/new/beach_moz_long.jpg");
+    background-image: url("../../imagens/new/beach_moz_long.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .categoria#idPovincias {
-    background-image: url("../../imagens/new/praca-da-independencia-maputo.jpg");
+    background-image: url("../../imagens/new/praca-da-independencia-maputo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
 }
 
 .categoria#idNatureza {
-    background-image: url("../../imagens/new/river.jpg");
+    background-image: url("../../imagens/new/river.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
 }
 
 .categoria#idCulinaria {
-    background-image: url("../../../imagens/new/rajas_temperos.jpg");
+    background-image: url("../../imagens/new/rajas_temperos.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.categoria#idMais {
-    background-image: url("../../imagens/elefanteVermelho.jpg");
+.categoria#idVoos {
+    background-image: url("../../imagens/maputo_v_drone.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
