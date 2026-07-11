@@ -367,7 +367,7 @@
         window.addEventListener(
             "scroll",
             function() {
-                if (window.scrollY >= document.querySelector(".pageNav").scrollHeight + 400) {
+                if (window.scrollY >= document.querySelector(".pageNav").scrollHeight && window.scrollY <= document.querySelector("main").scrollHeight) {
                     fastNaving.classList.add("showShortCut");
                 } else {
                     fastNaving.classList.remove("showShortCut");
@@ -387,8 +387,6 @@
                 plus_content_list[index].classList.add("show");
                 showMore_list[index].innerHTML = "<span>Show less -</span>";
             }
-            
-            
         }
     </script>
 </body>
