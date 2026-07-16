@@ -4,205 +4,229 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Touristic Moz - Provinces</title>
+      <!-- TODO: escreve uma descrição real de 1-2 frases sobre esta página -->
+      <meta name="description" content="Descrição breve desta página do Touristic Moz.">
+      <!-- TODO: muda o título -->
+      <title>Touristic Moz - Províncias</title>
+      
       <link rel="stylesheet" href="../styles/consts.css" media="all">
       <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
-      <style>
-            @import url(../styles/consts.css);
-            @import url(../styles/mediaQs/constsQ.css);
-
-            .myLogo {
-                  color: var(--green-2);
-                  display: block;
-            }
-
-            header {
-                  background-color: #DEDEDE;
-                  max-width: 998px;
-                  margin: 0 auto;
-                  box-shadow: inset 1px 8px 4px rgba(0, 0, 0, 0.747);
-            }
-
-            .titleHero {
-                  padding: 10px;
-                  height: 280px;
-                  display: grid;
-                  max-width: 998px;
-                  margin: 0 auto;
-                  background: #073d28 no-repeat;
-                  border-radius: 0px 0px 30px 30px;
-                  box-shadow: inset 2px -4px 4px rgba(114, 114, 114, 0.5);
-            }
-
-            .titleHero h2 {
-                  font-size: 2.5rem;
-            }
-
-            .titleHero p {
-                  align-self: end;
-                  padding: 4px;
-                  color: #FFFFFF;
-                  font-family: var(--h-font-family);
-                  font-size: 1.5rem;
-            }
-
-            .contentBody {
-                  background: #DEDEDE no-repeat;
-            }
-
-            .contentBody p {
-                  padding: 6px;
-            }
-
-            .aboutTitle {
-                  box-shadow: inset 2px -4px 2px rgba(0, 0, 0, 0.384);
-                  background: #DEDEDE no-repeat;
-                  font-size: 1.2rem;
-                  padding: var(--size-level-1);
-                  border-bottom: 1px solid rgba(0, 0, 0, 0.445);
-                  border-radius: 0px 0px 30px 30px;
-            }
-
-            aside {
-                  padding: 14px 0px;
-                  display: flex;
-                  flex-flow: row wrap;
-            }
-
-            a {
-                  text-decoration: none;
-                  display: contents;
-            }
-
-            .mainNavList {
-                  padding: var(--size-level-1) 0px;
-                  background-color: transparent;
-                  gap: 25px;
-                  width: 100%;
-                  display: flex;
-                  justify-content: space-between;
-                  flex-flow: column nowrap;
-                  flex: 0 1 content;
-            }
-
-            .lines {
-                  background-color: #042519;
-                  border-radius: 2px;
-                  overflow: hidden;
-            }
-
-            .lines_title {
-                  padding: var(--size-level-1);
-                  color: #0e7e55;
-                  display: block;
-            }
-
-            .lines_content {
-                  overflow-x: auto;
-                  overflow-y: hidden;
-                  width: 100%;
-                  background-color: #0a5a3d;
-                  height: fit-content;
-                  display: flex;
-            }
-
-            .lines_content {}
-
-            .MoreContent {
-                  font-size: 1.2rem;
-                  padding: var(--size-level-1);
-            }
-
-            .lines_content .teste {
-                  margin: var(--size-level-1);
-                  min-height: 200px;
-                  min-width: 260px;
-                  background-color: #8b8b8b3b;
-            }
-
-            .teste {
-                  display: flex;
-                  flex-flow: column nowrap;
-                  justify-content: space-between;
-            }
-
-            /* Background Images */
-            .titleHero {
+      <link rel="stylesheet" href="../styles/alls/indexStyle.css">
+      <link rel="stylesheet" href="../styles/mediaQs/MQindexStyle.css">
+      <style type="text/css" media="all">
+            .hero {
                   background-image: url(../imagens/praca-da-independencia-maputo.webp);
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  background-position: top right;
-                  border-radius: 0 0 30px 30px;
+            }
+            
+            .myLogo {}
+            
+            .hero p {
+                  color: #DFDFDF;
+                  text-shadow: 1px 1px 2px #000000C7;
+            }
+            
+            .introduction p {
+                  margin-top: 16px;
+            }
+            
+            #introduction {
+                  word-wrap: break-word;
+                  text-wrap: wrap;
+            }
+            
+            .map_iframe {
+                  margin-top: 22px;
+            }
+            
+            .img_description {
+                  margin-bottom: 22px;
             }
       </style>
 </head>
 
 <body>
+      <!-- Botão de voltar ao topo, igual em todas as páginas -->
+      <a href="#IdPageNav">
+            <div class="fastNaving">
+                  <img src="../imagens/icons/arrow_up.svg" alt="Back to navigation">
+            </div>
+      </a>
+      
+      <!-- Nav igual em todas as páginas -->
       <nav class="naving">
             <a href="../index.html" class="navHome">Touristic Moz</a>
       </nav>
-      <header>
-            <div class="titleHero">
-                  <h2>Provincias</h2>
-
-                  <p>Moçambique possuí 12 províncias.</p>
-            </div>
-      </header>
+      
       <div class="contentBody">
+            
+            <!-- HERO: foto de fundo + título da página -->
+            <header id="IdPageNav">
+                  <div class="hero">
+                        <!-- TODO: troca esta imagem por uma relevante ao tema da página -->
+                        <h1><span class="myLogo">Provinces</span></h1>
+                        <p>Mozambique has 10 provinces plus Maputo City.</p>
+                  </div>
+            </header>
+            
             <main>
-                  <section class="aboutTitle">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio tempore! Debitis ipsum
-                              cum assumenda officiis vero consequatur nemo sit, at est saepe facere reiciendis
-                              repudiandae molestias accusamus repellendus iusto!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, vitae neque itaque
-                              accusamus ipsum ratione. Animi laboriosam amet est, dicta esse cumque, tenetur consequatur
-                              natus aspernatur officiis incidunt reprehenderit! Animi.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid porro aut dolore earum
-                              vitae sequi, culpa incidunt mollitia blanditiis, quibusdam magnam nemo quos cupiditate
-                              officia voluptatibus quas cumque minima iste?</p>
+                  <!-- Secção de conteúdo principal -->
+                  <section class="mainAboutMoz">
+                        
+                        <!-- Navegação rápida interna, opcional (copia o padrão do index.html se a página for longa) -->
+                        <section class="pageNav" id="IdPageNav">
+                              <h2>Navigation</h2>
+                              <nav>
+                                    <ul>
+                                          <li class="mainsTitles"><a href="#introduction">Introduction</a></li>
+                                          <li class="mainsTitles"><a href="#secao2">Título da Secção 2</a></li>
+                                          <li class="mainsTitles"><a href="#secao3">Título da Secção 3</a></li>
+                                    </ul>
+                              </nav>
+                        </section>
+                        <section class="introduction" id="introduction">
+                              <h2>Introduction & First Considerations</h2>
+                              <p>
+                                    Mozambique is divided into <strong>10 provinces plus Maputo City</strong>, which holds
+                                    provincial status of its own. To keep this guide genuinely useful for travelers rather
+                                    than an exhaustive administrative list, <strong>we focus only on the provinces that offer real
+                                          value for a typical trip</strong>: places with established tourist infrastructure, notable
+                                    attractions, and reasonably easy access.
+                              </p>
+                              <p>
+                                    Below you will find in-depth coverage of <strong>Maputo</strong> (capital and gateway to
+                                    the country), <strong>Inhambane</strong> (beaches and diving), <strong>Nampula</strong>
+                                    (home to the UNESCO-listed Ilha de Moçambique), <strong>Sofala</strong> (Gorongosa
+                                    National Park and wildlife), and <strong>Cabo Delgado</strong> (the Quirimbas
+                                    Archipelago).
+                              </p>
+                              <p>
+                                    The remaining provinces — <strong>Niassa, Zambézia, Tete, Manica,</strong> and
+                                    <strong>Gaza</strong> — are not covered in detail here. This isn't because they lack
+                                    value; it's simply that they see far fewer international visitors, have less tourist
+                                    infrastructure in place, and are generally harder to reach without a longer, more
+                                    independent trip. If your travel style leans toward off-the-beaten-path exploration,
+                                    they're worth researching separately.
+                              </p>
+                        </section>
+                        
+                        <section id="secao1">
+                              <p class="important">
+                                    <strong>⚠ Safety Notice</strong>: <b>Cabo Delgado</b> is currently subject to "avoid all travel" advisories from several governments
+                                    (including the US, UK, Canada and Australia) due to an active insurgency in the province since 2017. Before
+                                    planning any visit, <strong>check your government's official travel advisory for Mozambique.</strong>
+                              </p>
+                              <h3>Cabo Delegado</h3>
+                              <p>
+                                    Historically, Cabo Delgado has been home to <strong> the Quirimbas Archipelago</strong> — a chain of pristine coral
+                                    islands considered one of Mozambique's most exceptional destinations.
+                                    
+                              <div class="plus_content">
+                                    <h4>The Quirimbas Archipelago</h4>
+                                    
+                                    <p>
+                                          Stretching for over 400 km along the coast, the Quirimbas Archipelago is made up
+                                          of around 32 coral islands, most of them uninhabited and untouched by mass
+                                          tourism. Crystal-clear turquoise waters, coral reefs teeming with marine life,
+                                          and powder-white sandbanks make it one of the most exclusive island escapes in
+                                          the Indian Ocean.
+                                    </p>
+                                    
+                                    <p>
+                                          <strong>Ibo Island</strong> is the archipelago's cultural heart — a former
+                                          Swahili-Arab and Portuguese trading post, with crumbling colonial forts, silver
+                                          filigree workshops, and a slow, timeless pace that draws travelers looking for
+                                          something beyond the typical beach holiday.
+                                    </p>
+                                    
+                                    <p>
+                                          Further out, islands like <strong>Vamizi, Medjumbe, and Matemo</strong> are home
+                                          to a handful of ultra-exclusive private lodges, popular for diving and
+                                          snorkeling among some of the healthiest coral reefs in the region, as well as
+                                          big-game fishing and traditional dhow sailing trips between islands.
+                                    </p>
+                                    
+                                    <p>
+                                          Wildlife lovers can also spot humpback whales during migration season (roughly
+                                          June to September), dolphins, and nesting sea turtles on several of the islands'
+                                          beaches.
+                                    </p>
+                                    
+                                    <p class="important">
+                                          As beautiful as the Quirimbas Archipelago is, please revisit the safety notice
+                                          above — the security situation in Cabo Delgado should be your starting point
+                                          when deciding whether and how to travel here, not an afterthought.
+                                    </p>
+                                    
+                                    <h4>A Bit of History</h4>
+                                    
+                                    <p>
+                                          Long before European colonization, Cabo Delgado's coast — particularly
+                                          <strong>Ibo Island</strong>, part of the Quirimbas — was a significant
+                                          Swahili-Arab trading post, connecting East Africa to the Indian Ocean trade
+                                          routes. Ibo still holds colonial-era fort ruins and a distinct architectural
+                                          character shaped by that history.
+                                    </p>
+                                    
+                                    <p>
+                                          In more recent years, the discovery of major offshore natural gas reserves
+                                          has drawn significant international investment to the province, reshaping
+                                          its economy alongside the security challenges mentioned above.
+                                    </p>
+                                    
+                                    <h4>Other Highlights</h4>
+                                    
+                                    <p>
+                                          <strong>Pemba</strong>, the provincial capital, sits on one of the largest
+                                          natural bays in the world. <strong>Wimbi Beach</strong>, its main stretch of
+                                          coastline, was once a popular base for travelers heading further into the
+                                          Quirimbas — with palm-lined sand, dhow trips, and a relaxed, low-key
+                                          atmosphere.
+                                    </p>
+                                    
+                                    <p>
+                                          <strong>Mecúfi</strong>, a short drive south of Pemba, is known for dramatic
+                                          red sandstone cliffs overlooking the ocean — a striking, less-visited stretch
+                                          of coast compared to the archipelago's more famous islands.
+                                    </p>
+                                    
+                                    <p>
+                                          Inland, the province borders the <strong>Rovuma River</strong>, which forms
+                                          the natural frontier with Tanzania — an area of mangroves, fishing communities,
+                                          and river life largely untouched by tourism infrastructure.
+                                    </p>
+                              </div>
+                              
+                              <button class="showMore" type="button" onclick="toggleShow(1)" title="Show or hide additional content">
+                                    Show more +
+                              </button>
+                              
+                              
+                              <iframe class="map_iframe" src="https://www.google.com/maps?q=Cabo+Delgado,+Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                              </iframe>
+                              <span class="img_description">Map of Cabo Delegado - <a href="https://maps.app.goo.gl/RW3FfJDHCcS71wNu5" rel="noopener" target="_blank">Google Maps</a></span>
+                              
+                              Given the current security situation, we're not able to recommend independent travel to
+                              this province at this time. If you have a specific reason to travel there, consult a specialized
+                              security advisor and your embassy beforehand.
+                              </p>
+                              <!-- TODO: imagem opcional -->
+                              <!-- <img src="../imagens/NOME_DA_IMAGEM.webp" alt="descrição da imagem" loading="lazy"> -->
+                        </section>
+                        
+                        <section id="secao2">
+                              <h3>Título da Secção 2</h3>
+                              <p>Mais conteúdo aqui.</p>
+                        </section>
+                        
+                        <section id="secao3">
+                              <h3>Título da Secção 3</h3>
+                              <p>Mais conteúdo aqui.</p>
+                        </section>
                   </section>
             </main>
-            <aside>
-                  <section class="mainNavList">
-                        <ul class="lines">
-                              <h2 class="lines_title">Zona Norte</h2>
-                              <div class="lines_content" id="lc1">
-                                    <!-- Aqui ficam conteudos de cada line -->
-
-                                    <li class="teste"></li>
-                              </div>
-                        </ul>
-
-                        <ul class="lines">
-                              <h2 class="lines_title">Zona Centro</h2>
-                              <div class="lines_content" id="lc2">
-
-
-                                    <li class="teste"></li>
-                              </div>
-                        </ul>
-
-                        <ul class="lines">
-                              <h2 class="lines_title">Zona Sul</h2>
-
-                              <div class="lines_content" id="lc3">
-
-                                    <li class="teste"></li>
-
-                              </div>
-                        </ul>
-                  </section>
-            </aside>
-            <footer class="MoreContent">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusamus dolores in dignissimos
-                        error, ab perspiciatis, dicta officiis architecto obcaecati quibusdam sit, voluptate molestias
-                        quas similique. Beatae excepturi possimus cumque?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus magni pariatur reiciendis,
-                        expedita eum voluptates exercitationem eius possimus culpa corporis numquam a porro ab earum,
-                        molestiae neque, assumenda impedit!</p>
-                  <!-- O veja tambem -->
-            </footer>
       </div>
+      
+      <!-- Footer igual em todas as páginas -->
       <footer class="footer">
             <p>© 2026 Touristic Moz — Your guide to Mozambique</p>
             <nav class="footerNav">
@@ -212,13 +236,21 @@
                   <a href="directFligts_Table.html">Flights</a>
             </nav>
       </footer>
+      <script type="text/javascript" charset="utf-8">
+            const showMore_list = document.querySelectorAll(".showMore");
+            const plus_content_list = document.querySelectorAll(".plus_content");
+            
+            function toggleShow(index) {
+                  index--;
+                  if (plus_content_list[index].classList.contains("show")) {
+                        plus_content_list[index].classList.remove("show");
+                        showMore_list[index].innerHTML = "<span>Show more +</span>";
+                  } else {
+                        plus_content_list[index].classList.add("show");
+                        showMore_list[index].innerHTML = "<span>Show less -</span>";
+                  }
+            }
+      </script>
 </body>
-<script>
-      for (let index = 0; index < 6; index++) {
-            document.getElementById(`lc1`).innerHTML += `<div class="teste">T1: ${index}</div>`;
-            document.getElementById(`lc2`).innerHTML += `<div class="teste">T2: ${index}</div>`;
-            document.getElementById(`lc3`).innerHTML += `<div class="teste">T3: ${index}</div>`;
-      }
-</script>
 
 </html>

@@ -42,6 +42,9 @@ section p:first-of-type {
     margin-bottom: 0px;
 }
 
+.mainAboutMoz{
+    padding: var(--size-level-3);
+}
 .naving {
     background: var(--green-4-solf);
     height: 60px;
