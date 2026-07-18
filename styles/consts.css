@@ -8,19 +8,19 @@
     --green-1-hover: #4d9987;
     --green-4-solf: #174e43;
     --green-4-dark: #0a2c26;
-
+    
     /* Int Scales */
     --size-level-1: 8px;
     --size-level-2: 12px;
     --size-level-3: 16px;
     --size-level-4: 18px;
-
+    
     /* BackGrounds */
     --backg-color-contentBody: #E9E9E9;
-
+    
     /* Text */
     --text-default--color: #08231E;
-
+    
     /* H's */
     --h-font-family: "Outfit", sans-serif;
     --h-default-color: #2b6657;
@@ -42,9 +42,10 @@ section p:first-of-type {
     margin-bottom: 0px;
 }
 
-.mainAboutMoz{
+.mainAboutMoz {
     padding: var(--size-level-3);
 }
+
 .naving {
     background: var(--green-4-solf);
     height: 60px;
@@ -113,9 +114,11 @@ h5 {
     letter-spacing: 1%;
     text-shadow: 1px 1px 2px #0000008A;
 }
-.navHome{
+
+.navHome {
     font-size: 1.8em;
 }
+
 h1 {
     font-size: 3rem;
     display: block;
@@ -159,12 +162,15 @@ body {
     font-size: 1.025em;
     font-family: "Open Sans", sans-serif;
 }
-ul{
+
+ul {
     font-size: 1.010em;
 }
-strong{
+
+strong {
     font-size: 1.05em;
 }
+
 li {
     font-size: 1.025em;
     font-family: "Open Sans", sans-serif;
@@ -209,6 +215,91 @@ li {
 
 ::-webkit-scrollbar-track-piece {
     background-color: #255a4d6e;
+}
+
+/* Province cards content pattern */
+.attraction-main img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.other-attractions {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.other-attractions>li:before {
+    content: "";
+}
+
+.other-attractions li {
+    flex: 1 1 140px;
+    max-width: 220px;
+}
+
+.other-attractions img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.other-attractions p {
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.why-visit {
+    background: var(--backg-color-contentBody);
+    border-left: 4px solid var(--green-1);
+    padding: 12px;
+    margin-top: 12px;
+}
+
+.other-attractions h5 {
+    font-size: 1.2rem;
+    margin: 6px 0 2px 0;
+    color: var(--h-default-color);
+}
+
+.quick-facts {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.quick-facts li {
+    background: var(--backg-color-contentBody);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+}
+
+.attraction-photo-placeholder {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    background: var(--green-4-solf);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 6px;
+}
+
+.why-visit--caution {
+    border-left: 4px solid #B3541E;
+    background: #FBEDE4;
 }
 
 

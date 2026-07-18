@@ -18,7 +18,9 @@
                   background-image: url(../imagens/praca-da-independencia-maputo.webp);
             }
             
-            .myLogo {}
+            img {
+                  margin-top: 12px;
+            }
             
             .hero p {
                   color: #DFDFDF;
@@ -41,6 +43,14 @@
             .img_description {
                   margin-bottom: 22px;
             }
+            
+            aside {
+                  background-color: var(--backg-color-contentBody);
+            }
+            
+            .contentBody {
+                  box-shadow: none;
+            }
       </style>
 </head>
 
@@ -60,7 +70,7 @@
       <div class="contentBody">
             
             <!-- HERO: foto de fundo + título da página -->
-            <header id="IdPageNav">
+            <header>
                   <div class="hero">
                         <!-- TODO: troca esta imagem por uma relevante ao tema da página -->
                         <h1><span class="myLogo">Provinces</span></h1>
@@ -78,9 +88,11 @@
                               <nav>
                                     <ul>
                                           <li class="mainsTitles"><a href="#introduction">Introduction</a></li>
-                                          <li class="mainsTitles"><a href="#cabo_delgado_title">Cabo Delegado</a></li>
-                                          <li class="mainsTitles"><a href="#secao2">Título da Secção 2</a></li>
-                                          <li class="mainsTitles"><a href="#secao3">Título da Secção 3</a></li>
+                                          <li class="mainsTitles"><a href="#maputo_title">Maputo</a></li>
+                                          <li class="mainsTitles"><a href="#inhambane_title">Inhambane</a></li>
+                                          <li class="mainsTitles"><a href="#sofala_title">Sofala</a></li>
+                                          <li class="mainsTitles"><a href="#nampula_title">Nampula</a></li>
+                                          <li class="mainsTitles"><a href="#cabo_delgado_title">Cabo Delgado</a></li>
                                     </ul>
                               </nav>
                         </section>
@@ -110,97 +122,56 @@
                               </p>
                         </section>
                         
-                        <section id="secao1">
-                              <p class="important">
-                                    <strong>⚠ Safety Notice</strong>: <b>Cabo Delgado</b> is currently subject to "avoid all travel" advisories from several governments
-                                    (including the US, UK, Canada and Australia) due to an active insurgency in the province since 2017. Before
-                                    planning any visit, <strong>check your government's official travel advisory for Mozambique.</strong>
-                              </p>
-                              <h3 id="cabo_delgado_title">Cabo Delegado</h3>
-                              <p>
-                                    Historically, Cabo Delgado has been home to <strong> the Quirimbas Archipelago</strong> — a chain of pristine coral
-                                    islands considered one of Mozambique's most exceptional destinations.
-                                    
+                        <section id="maputo_section">
+                              <div class="attraction-main">
+                                    <h3 id="maputo_title">Maputo</h3>
+                                    <img src="../imagens/maputoCidade.webp" alt="Maputo city skyline at sunset with the Maputo-Katembe bridge" loading="lazy">
+                                    <p>
+                                          Mozambique's capital is where most trips begin — a lively mix of
+                                          jacaranda-lined avenues, colonial-era architecture, and a fast-growing
+                                          skyline overlooking the Baía de Maputo.
+                                    </p>
+                                    <ul class="quick-facts">
+                                          <li><strong>Best time:</strong> May–October</li>
+                                          <li><strong>Getting there:</strong> International airport</li>
+                                          <li><strong>Budget:</strong> $$–$$$</li>
+                                          <li><strong>Malaria risk:</strong> Low</li>
+                                    </ul>
+                              </div>
+                              
                               <div class="plus_content">
-                                    <h4>The Quirimbas Archipelago</h4>
-                                    
-                                    <p>
-                                          Stretching for over 400 km along the coast, the Quirimbas Archipelago is made up
-                                          of around 32 coral islands, most of them uninhabited and untouched by mass
-                                          tourism. Crystal-clear turquoise waters, coral reefs teeming with marine life,
-                                          and powder-white sandbanks make it one of the most exclusive island escapes in
-                                          the Indian Ocean.
-                                    </p>
-                                    <img src="../imagens/quilalea_in_mozambique.jpg" alt="Quilalea in Mozambique"/>
-                                    <p class="img_description">
-                                          Photo: "Quilalea in Mozambique" by
-                                          <a href="https://en.wikipedia.org/wiki/User:Etimbo" target="_blank" rel="noopener noreferrer">Etimbo</a>,
-                                          <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>,
-                                          via Wikimedia Commons
-                                    </p>
-                                    
-                                    <p>
-                                          <strong>Ibo Island</strong> is the archipelago's cultural heart — a former
-                                          Swahili-Arab and Portuguese trading post, with crumbling colonial forts, silver
-                                          filigree workshops, and a slow, timeless pace that draws travelers looking for
-                                          something beyond the typical beach holiday.
-                                    </p>
-                                    
-                                    <p>
-                                          Further out, islands like <strong>Vamizi, Medjumbe, and Matemo</strong> are home
-                                          to a handful of ultra-exclusive private lodges, popular for diving and
-                                          snorkeling among some of the healthiest coral reefs in the region, as well as
-                                          big-game fishing and traditional dhow sailing trips between islands.
-                                    </p>
-                                    
-                                    <p>
-                                          Wildlife lovers can also spot humpback whales during migration season (roughly
-                                          June to September), dolphins, and nesting sea turtles on several of the islands'
-                                          beaches.
-                                    </p>
-                                    
-                                    <p class="important">
-                                          As beautiful as the Quirimbas Archipelago is, please revisit the safety notice
-                                          above — the security situation in Cabo Delgado should be your starting point
-                                          when deciding whether and how to travel here, not an afterthought.
-                                    </p>
+                                    <h4>Other Attractions</h4>
+                                    <ul class="other-attractions">
+                                          <li>
+                                                <img src="../imagens/praca-da-independencia-maputo.webp" alt="Independence Square, Maputo" loading="lazy">
+                                                <h5>Praça da Independência</h5>
+                                                <p>The city's central square, home to the City Hall and the
+                                                      statue of Samora Machel.</p>
+                                          </li>
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>CFM Railway Station</h5>
+                                                <p>A striking Beaux-Arts building often linked to Gustave
+                                                      Eiffel's studio, still Maputo's working train station.</p>
+                                          </li>
+                                    </ul>
                                     
                                     <h4>A Bit of History</h4>
-                                    
                                     <p>
-                                          Long before European colonization, Cabo Delgado's coast — particularly
-                                          <strong>Ibo Island</strong>, part of the Quirimbas — was a significant
-                                          Swahili-Arab trading post, connecting East Africa to the Indian Ocean trade
-                                          routes. Ibo still holds colonial-era fort ruins and a distinct architectural
-                                          character shaped by that history.
+                                          Founded as a Portuguese trading post and long known as
+                                          <strong>Lourenço Marques</strong>, the city was renamed Maputo after
+                                          independence in 1975. Its historic centre still shows a strong
+                                          Portuguese colonial influence, blended with Art Deco buildings from
+                                          the early 20th century.
                                     </p>
                                     
+                                    <h4>Culture</h4>
                                     <p>
-                                          In more recent years, the discovery of major offshore natural gas reserves
-                                          has drawn significant international investment to the province, reshaping
-                                          its economy alongside the security challenges mentioned above.
-                                    </p>
-                                    
-                                    <h4>Other Highlights</h4>
-                                    
-                                    <p>
-                                          <strong>Pemba</strong>, the provincial capital, sits on one of the largest
-                                          natural bays in the world. <strong>Wimbi Beach</strong>, its main stretch of
-                                          coastline, was once a popular base for travelers heading further into the
-                                          Quirimbas — with palm-lined sand, dhow trips, and a relaxed, low-key
-                                          atmosphere.
-                                    </p>
-                                    
-                                    <p>
-                                          <strong>Mecúfi</strong>, a short drive south of Pemba, is known for dramatic
-                                          red sandstone cliffs overlooking the ocean — a striking, less-visited stretch
-                                          of coast compared to the archipelago's more famous islands.
-                                    </p>
-                                    
-                                    <p>
-                                          Inland, the province borders the <strong>Rovuma River</strong>, which forms
-                                          the natural frontier with Tanzania — an area of mangroves, fishing communities,
-                                          and river life largely untouched by tourism infrastructure.
+                                          Maputo has a vibrant arts and music scene —
+                                          <strong>marrabenta</strong> music has its roots here — along with a
+                                          lively café and nightlife culture along Avenida Julius Nyerere, and
+                                          craft markets like <strong>FEIMA</strong> selling local art and
+                                          design.
                                     </p>
                               </div>
                               
@@ -208,31 +179,348 @@
                                     Show more +
                               </button>
                               
+                              <iframe class="map_iframe" title="Map of Maputo" src="https://www.google.com/maps?q=Maputo,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Maputo - <a href="https://www.google.com/maps/search/?api=1&query=Maputo%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
                               
-                              <iframe class="map_iframe" src="https://www.google.com/maps?q=Cabo+Delgado,+Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                              </iframe>
-                              <span class="img_description">Map of Cabo Delegado - <a href="https://maps.app.goo.gl/RW3FfJDHCcS71wNu5" rel="noopener" target="_blank">Google Maps</a></span>
-                              
-                              Given the current security situation, we're not able to recommend independent travel to
-                              this province at this time. If you have a specific reason to travel there, consult a specialized
-                              security advisor and your embassy beforehand.
+                              <p class="why-visit">
+                                    <strong>Why go:</strong> Maputo is the easiest entry point to Mozambique,
+                                    with the country's main international airport, the best infrastructure,
+                                    and a good first taste of the food and culture before heading further out.
                               </p>
-                              <!-- TODO: imagem opcional -->
-                              <!-- <img src="../imagens/NOME_DA_IMAGEM.webp" alt="descrição da imagem" loading="lazy"> -->
                         </section>
                         
-                        <section id="secao2">
-                              <h3>Título da Secção 2</h3>
-                              <p>Mais conteúdo aqui.</p>
+                        <section id="inhambane_section">
+                              <div class="attraction-main">
+                                    <h3 id="inhambane_title">Inhambane</h3>
+                                    <img src="../imagens/beach_moz_long.webp" alt="Mozambique coastline, representative of Inhambane's beaches" loading="lazy">
+                                    <p>
+                                          Mozambique's most popular beach destination, known above all for
+                                          <strong>Tofo Beach</strong> — one of the few places in the world with
+                                          a near year-round chance of swimming with whale sharks and manta
+                                          rays.
+                                    </p>
+                                    <ul class="quick-facts">
+                                          <li><strong>Best time:</strong> June–October (whale sharks)</li>
+                                          <li><strong>Getting there:</strong> ~1h flight from Maputo</li>
+                                          <li><strong>Budget:</strong> $$</li>
+                                          <li><strong>Malaria risk:</strong> Moderate</li>
+                                    </ul>
+                              </div>
+                              
+                              <div class="plus_content">
+                                    <h4>Other Attractions</h4>
+                                    <ul class="other-attractions">
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>Barra Beach</h5>
+                                                <p>Calmer waters, popular for families and snorkeling near the
+                                                      reef.</p>
+                                          </li>
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>Inhambane City</h5>
+                                                <p>A charming, low-key town with some of the oldest colonial
+                                                      buildings in the country.</p>
+                                          </li>
+                                    </ul>
+                                    
+                                    <h4>A Bit of History</h4>
+                                    <p>
+                                          Inhambane is one of the oldest continuously inhabited settlements on
+                                          the East African coast, with a trading history stretching back over
+                                          a thousand years through Swahili-Arab and later Portuguese traders —
+                                          making it one of the first parts of Mozambique to have contact with
+                                          Portugal, well before Maputo grew into a city.
+                                    </p>
+                                    
+                                    <h4>Culture</h4>
+                                    <p>
+                                          The region has a strong dhow-sailing tradition and a relaxed,
+                                          beach-town pace of life. Cashew and coconut plantations shape both
+                                          the landscape and the local cuisine.
+                                    </p>
+                              </div>
+                              
+                              <button class="showMore" type="button" onclick="toggleShow(2)" title="Show or hide additional content">
+                                    Show more +
+                              </button>
+                              
+                              <iframe class="map_iframe" title="Map of Inhambane" src="https://www.google.com/maps?q=Inhambane,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Inhambane - <a href="https://www.google.com/maps/search/?api=1&query=Inhambane%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
+                              
+                              <p class="why-visit">
+                                    <strong>Why go:</strong> if beaches and marine life are the priority,
+                                    Inhambane is the single best-value stop in the country — good
+                                    infrastructure, direct flights, and world-class diving without needing
+                                    the logistics of a more remote trip.
+                              </p>
                         </section>
                         
-                        <section id="secao3">
-                              <h3>Título da Secção 3</h3>
-                              <p>Mais conteúdo aqui.</p>
+                        <section id="sofala_section">
+                              <div class="attraction-main">
+                                    <h3 id="sofala_title">Sofala</h3>
+                                    <img src="../imagens/umElefanteNaFloresta.webp" alt="Elephant in Gorongosa National Park" loading="lazy">
+                                    <p>
+                                          Home to <strong>Gorongosa National Park</strong>, one of Africa's
+                                          great wildlife recovery stories — a war-ravaged reserve rebuilt over
+                                          the last two decades into a thriving safari destination.
+                                    </p>
+                                    <ul class="quick-facts">
+                                          <li><strong>Best time:</strong> May–November (dry season)</li>
+                                          <li><strong>Getting there:</strong> ~3-4h drive from Beira</li>
+                                          <li><strong>Budget:</strong> $$$</li>
+                                          <li><strong>Malaria risk:</strong> High</li>
+                                    </ul>
+                              </div>
+                              
+                              <div class="plus_content">
+                                    <h4>Other Attractions</h4>
+                                    <ul class="other-attractions">
+                                          <li>
+                                                <img src="../imagens/rinoCom1filho.webp" alt="Rhino with calf in Gorongosa" loading="lazy">
+                                                <h5>Rhino Sightings</h5>
+                                                <p>Part of the park's ongoing reintroduction program.</p>
+                                          </li>
+                                          <li>
+                                                <img src="../imagens/umaGazela.webp" alt="Impala in Gorongosa" loading="lazy">
+                                                <h5>Beira</h5>
+                                                <p>Sofala's coastal capital, with Indian Ocean beaches and
+                                                      colonial architecture.</p>
+                                          </li>
+                                    </ul>
+                                    
+                                    <h4>A Bit of History</h4>
+                                    <p>
+                                          Gorongosa was once one of Africa's premier safari parks in the
+                                          1960s-70s, before Mozambique's civil war (1977-1992) devastated its
+                                          wildlife populations. A long-term restoration project since 2004 has
+                                          brought numbers back dramatically, making it one of the continent's
+                                          most remarkable conservation comeback stories.
+                                    </p>
+                                    
+                                    <h4>Culture</h4>
+                                    <p>
+                                          The park works closely with surrounding communities on conservation
+                                          and eco-tourism programs, and the wider Sofala region blends Chuabo
+                                          and Sena cultural traditions with Beira's Portuguese-colonial port
+                                          history.
+                                    </p>
+                              </div>
+                              
+                              <button class="showMore" type="button" onclick="toggleShow(3)" title="Show or hide additional content">
+                                    Show more +
+                              </button>
+                              
+                              <iframe class="map_iframe" title="Map of Sofala" src="https://www.google.com/maps?q=Gorongosa+National+Park,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Sofala - <a href="https://www.google.com/maps/search/?api=1&query=Gorongosa%20National%20Park%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
+                              
+                              <p class="why-visit">
+                                    <strong>Why go:</strong> for genuine safari wildlife in Mozambique,
+                                    Gorongosa is the clearest choice — a strong alternative to Kruger or the
+                                    Serengeti, with the added story of a park actively being rebuilt.
+                              </p>
+                        </section>
+                        
+                        <section id="nampula_section">
+                              <div class="attraction-main">
+                                    <h3 id="nampula_title">Nampula</h3>
+                                    <img src="../imagens/gerdos-fortaleza.webp" alt="Historic relief at the Fortress of São Sebastião, Ilha de Moçambique" loading="lazy">
+                                    <p>
+                                          Home to <strong>Ilha de Moçambique</strong>, a tiny coral island and
+                                          UNESCO World Heritage Site that gave the entire country its name —
+                                          packed with over 500 years of layered history.
+                                    </p>
+                                    <ul class="quick-facts">
+                                          <li><strong>Best time:</strong> April–November</li>
+                                          <li><strong>Getting there:</strong> Flight to Nampula + short drive</li>
+                                          <li><strong>Budget:</strong> $$</li>
+                                          <li><strong>Malaria risk:</strong> High</li>
+                                    </ul>
+                              </div>
+                              
+                              <div class="plus_content">
+                                    <h4>Other Attractions</h4>
+                                    <ul class="other-attractions">
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>Fortaleza de São Sebastião</h5>
+                                                <p>The oldest complete fort still standing in sub-Saharan
+                                                      Africa.</p>
+                                          </li>
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>Stone Town</h5>
+                                                <p>The island's historic quarter, with Swahili, Arab, Indian
+                                                      and Portuguese architecture side by side.</p>
+                                          </li>
+                                    </ul>
+                                    
+                                    <h4>A Bit of History</h4>
+                                    <p>
+                                          Ilha de Moçambique was a major Indian Ocean trading post centuries
+                                          before Portuguese arrival, and later became the capital of
+                                          Portuguese East Africa until 1898. Its layered
+                                          Swahili-Arab-Indian-Portuguese history is why it was named a UNESCO
+                                          World Heritage Site in 1991.
+                                    </p>
+                                    
+                                    <h4>Culture</h4>
+                                    <p>
+                                          The island blends Makhuwa, Swahili and Portuguese influences,
+                                          visible in its architecture, cuisine, and the
+                                          <strong>capulana</strong> cloth traditions still practiced by local
+                                          artisans today.
+                                    </p>
+                              </div>
+                              
+                              <button class="showMore" type="button" onclick="toggleShow(4)" title="Show or hide additional content">
+                                    Show more +
+                              </button>
+                              
+                              <iframe class="map_iframe" title="Map of Nampula" src="https://www.google.com/maps?q=Ilha+de+Mocambique,Nampula,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Nampula - <a href="https://www.google.com/maps/search/?api=1&query=Ilha%20de%20Mocambique%2CNampula%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
+                              
+                              <p class="why-visit">
+                                    <strong>Why go:</strong> for travelers who want history and culture over
+                                    beaches or safari, Ilha de Moçambique offers something no other province
+                                    does — an entire town frozen in centuries of trade history, still lived
+                                    in today.
+                              </p>
+                        </section>
+                        
+                        <section id="cabo_delgado_section">
+                              <div class="attraction-main">
+                                    <h3 id="cabo_delgado_title">Cabo Delgado</h3>
+                                    
+                                    <p class="important">
+                                          <strong>⚠ Safety Notice:</strong> Cabo Delgado is currently subject to
+                                          "avoid all travel" advisories from several governments (including the US,
+                                          UK, Canada and Australia) due to an active insurgency in the province
+                                          since 2017. Before planning any visit, check your own government's
+                                          official travel advisory for Mozambique.
+                                    </p>
+                                    
+                                    <h4>The Quirimbas Archipelago</h4>
+                                    
+                                    <p>
+                                          Historically, Cabo Delgado has been home to the <strong>Quirimbas
+                                                Archipelago</strong> — a chain of pristine coral islands considered one
+                                          of Mozambique's most exceptional destinations. Stretching for over 400 km
+                                          along the coast, it's made up of around 32 coral islands, most of them
+                                          uninhabited and untouched by mass tourism.
+                                    </p>
+                                    <img src="../imagens/quilalea_in_mozambique.jpg" alt="Quilalea in Mozambique, part of the Quirimbas Archipelago" loading="lazy">
+                                    <p class="img_description">
+                                          Photo: "Quilalea in Mozambique" by
+                                          <a href="https://en.wikipedia.org/wiki/User:Etimbo" target="_blank" rel="noopener noreferrer">Etimbo</a>,
+                                          <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>,
+                                          via Wikimedia Commons
+                                    </p>
+                                    <ul class="quick-facts">
+                                          <li><strong>Safety:</strong> Avoid all travel</li>
+                                          <li><strong>Best time:</strong> N/A — see notice above</li>
+                                          <li><strong>Getting there:</strong> Flight to Pemba</li>
+                                          <li><strong>Malaria risk:</strong> High</li>
+                                    </ul>
+                              </div>
+                              
+                              <div class="plus_content">
+                                    <h4>Other Attractions</h4>
+                                    <ul class="other-attractions">
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>Ibo Island</h5>
+                                                <p>The archipelago's cultural heart, a former Swahili-Arab
+                                                      and Portuguese trading post with crumbling colonial
+                                                      forts and silver filigree workshops.</p>
+                                          </li>
+                                          <li>
+                                                <div class="attraction-photo-placeholder">Photo coming soon</div>
+                                                <h5>Pemba &amp; Wimbi Beach</h5>
+                                                <p>The provincial capital, sitting on one of the largest
+                                                      natural bays in the world, with a relaxed, palm-lined
+                                                      coastline.</p>
+                                          </li>
+                                    </ul>
+                                    
+                                    <h4>A Bit of History</h4>
+                                    <p>
+                                          Long before European colonization, Cabo Delgado's coast — particularly
+                                          Ibo Island — was a significant Swahili-Arab trading post, connecting
+                                          East Africa to the Indian Ocean trade routes. In more recent years, the
+                                          discovery of major offshore natural gas reserves has drawn significant
+                                          international investment to the province, reshaping its economy
+                                          alongside the security challenges mentioned above.
+                                    </p>
+                                    
+                                    <h4>Culture</h4>
+                                    <p>
+                                          The province is home to the <strong>Makonde</strong> people, celebrated
+                                          across East Africa for their intricate wood carving and the traditional
+                                          <strong>Mapiko</strong> mask dance, as well as the <strong>Mwani</strong>,
+                                          a coastal community with strong Swahili-Arab trading roots dating back
+                                          centuries. Inland, the province borders the Rovuma River, the natural
+                                          frontier with Tanzania.
+                                    </p>
+                              </div>
+                              
+                              <button class="showMore" type="button" onclick="toggleShow(5)" title="Show or hide additional content">
+                                    Show more +
+                              </button>
+                              
+                              <iframe class="map_iframe" title="Map of Cabo Delgado" src="https://www.google.com/maps?q=Cabo+Delgado,+Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Cabo Delgado - <a href="https://maps.app.goo.gl/RW3FfJDHCcS71wNu5" rel="noopener" target="_blank">Google Maps</a></span>
+                              
+                              <p class="why-visit why-visit--caution">
+                                    <strong>Current outlook:</strong> given the ongoing security situation, we're
+                                    not able to recommend independent travel to this province at this time. If you
+                                    have a specific reason to travel there, consult a specialized security advisor
+                                    and your embassy beforehand.
+                              </p>
                         </section>
                   </section>
             </main>
       </div>
+      <aside>
+            <a href="paginas/provincias.html" rel="next">
+                  <section class="categoria" id="idPovincias">
+                        <h2>Provinces</h2>
+                        <div class="breveMensagem">
+                              <p>Mozambique has 11 provinces, divided in regions (North, Centrer e South), all with several
+                                    languages and culture.</p>
+                        </div>
+                  </section>
+            </a>
+            <a href="paginas/natureza.html" rel="next">
+                  <section class="categoria" id="idNatureza">
+                        <h2>Nature</h2>
+                        <div class="breveMensagem">
+                              <p>The nature is part of the identity of Mozambique, besides it's natural resourses it has beautiful landscapes.</p>
+                        </div>
+                  </section>
+            </a>
+            <a href="paginas/culinaria.html" rel="next">
+                  <section class="categoria" id="idCulinaria">
+                        <h2>Culinaria</h2>
+                        <div class="breveMensagem">
+                              <p>
+                                    Culinaria. Ela é unica e vibrante, passamos de churrascos para verduras, dos eventos e
+                                    casamentos para cacanas e nhanganas
+                              </p>
+                        </div>
+                  </section>
+            </a>
+            <a href="paginas/directFligts_Table.html" rel="next">
+                  <section class="categoria" id="idVoos">
+                        <h2>Flights</h2>
+                        <div class="breveMensagem">
+                              <p>
+                                    Check direct flight routes to Maputo from major cities, with approximate flight times and frequency.
+                              </p>
+                        </div>
+                  </section>
+            </a>
+      </aside>
       
       <!-- Footer igual em todas as páginas -->
       <footer class="footer">
