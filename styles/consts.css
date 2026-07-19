@@ -3,7 +3,7 @@
 :root {
     /* Greens */
     --green-1: #437D6F;
-    --green-2: #30cf30;
+    --green-2: #167616;
     --green-3: #0b3029;
     --green-1-hover: #4d9987;
     --green-4-solf: #174e43;
@@ -300,6 +300,59 @@ li {
 .why-visit--caution {
     border-left: 4px solid #B3541E;
     background: #FBEDE4;
+}
+.coming-soon-hero {
+      position: relative;
+      height: 280px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 12px 0;
+}
+
+aside > section{
+    align-content: none;
+}
+
+.coming-soon-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.35);
+}
+
+.coming-soon-overlay {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 6px;
+}
+
+.coming-soon-overlay strong {
+      background: rgba(255, 255, 255, 0.75);
+      color: var(--green-4-solf);
+      padding: 8px 22px;
+      border-radius: 6px;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+}
+
+.coming-soon-overlay p {
+      background: rgba(255, 255, 255, 0.6);
+      color: var(--text-default--color);
+      padding: 6px 16px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      max-width: 280px;
 }
 
 

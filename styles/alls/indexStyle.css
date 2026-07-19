@@ -295,11 +295,11 @@ strong {
 }
 
 .categoria#idVoos {
-    background-image: url("../../imagens/maputo_v_drone.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url("../../imagens/plane-window-sunset.webp");
+      background-position: right center;
+      background-size: cover;
 }
+
 .categoria#idMainPage{
     background-image: url("../../imagens/beach_moz_long.webp");
     background-repeat: no-repeat;

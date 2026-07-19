@@ -10,6 +10,56 @@
       <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
       <link rel="stylesheet" href="../styles/alls/indexStyle.css">
       <link rel="stylesheet" href="../styles/mediaQs/MQindexStyle.css">
+      <style type="text/css" media="all">
+            .coming-soon-hero {
+                  position: relative;
+                  height: 260px;
+                  background-size: cover;
+                  background-position: center;
+                  border-radius: 8px;
+                  overflow: hidden;
+                  margin: 12px 0;
+            }
+
+            .coming-soon-hero::before {
+                  content: "";
+                  position: absolute;
+                  inset: 0;
+                  backdrop-filter: blur(6px);
+                  -webkit-backdrop-filter: blur(6px);
+                  background: rgba(255, 255, 255, 0.35);
+            }
+
+            .coming-soon-overlay {
+                  position: relative;
+                  z-index: 1;
+                  height: 100%;
+                  display: flex;
+                  flex-flow: column nowrap;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  gap: 6px;
+            }
+
+            .coming-soon-overlay strong {
+                  background: rgba(255, 255, 255, 0.75);
+                  color: var(--green-4-solf);
+                  padding: 8px 22px;
+                  border-radius: 6px;
+                  font-size: 1.4rem;
+                  letter-spacing: 1px;
+            }
+
+            .coming-soon-overlay p {
+                  background: rgba(255, 255, 255, 0.6);
+                  color: var(--text-default--color);
+                  padding: 6px 16px;
+                  border-radius: 6px;
+                  font-size: 0.9rem;
+                  max-width: 280px;
+            }
+      </style>
 </head>
 
 <body>
@@ -26,8 +76,13 @@
             <main>
                   <section class="mainAboutMoz">
                         <section>
-                              <p class="important"><strong>Page coming soon.</strong> We're preparing full content
-                                    about Mozambican dishes, spices, and food culture. Check back shortly!</p>
+                              <div class="coming-soon-hero" style="background-image:url(../imagens/chursaco.webp);">
+                                    <div class="coming-soon-overlay">
+                                          <strong>Coming Soon</strong>
+                                          <p>We're preparing full content about Mozambican dishes, spices, and
+                                                food culture.</p>
+                                    </div>
+                              </div>
                         </section>
                   </section>
             </main>

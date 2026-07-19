@@ -15,39 +15,43 @@
             overflow: auto;
         }
         
+        main {
+            padding: 8px;
+        }
+        
         .flight-table {
             width: 100%;
             overflow: auto;
-            background-color: #424242;
+            border-collapse: collapse;
         }
         
         td {
-            padding: 8px 0px;
+            padding: 10px 6px;
             text-align: center;
         }
         
         th {
             text-transform: capitalize;
-            padding: 6px 4px;
-            min-width: 140px;
+            padding: 10px 6px;
+            min-width: 120px;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.05em;
             text-align: center;
         }
         
         .flight-table th {
-            background-color: #d6c85c;
-            color: #2F2F2F;
+            background-color: var(--green-4-solf);
+            color: #FFFFFF;
         }
         
         .flight-table tr:nth-child(even) {
-            background-color: #BEBEBE;
-            color: #343434;
+            background-color: var(--backg-color-contentBody);
+            color: var(--text-default--color);
         }
         
         .flight-table tr:nth-child(odd) {
-            background-color: #5D5D5D;
-            color: #D3D3D3;
+            background-color: #FFFFFF;
+            color: var(--text-default--color);
         }
         
         .theader {
@@ -57,13 +61,56 @@
         }
         
         h2 {
-            font-size: 2.6rem;
+            font-size: 2.2rem;
         }
         
         .table-container {
             overflow: auto;
             margin: 22px 0px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
         }
+        
+        .quick-facts {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+        
+        .quick-facts li {
+            background: var(--backg-color-contentBody);
+            border-radius: 6px;
+            padding: 6px 10px;
+            font-size: 0.85rem;
+        }
+        
+        .flight-tips h3 {
+            margin-top: 28px;
+        }
+        
+        .flight-tips ul {
+            padding-left: 20px;
+        }
+        
+        .flight-tips li {
+            margin-bottom: 8px;
+        }
+        
+        .hero {
+            background-image: url("../../imagens/plane-window-sunset.webp");
+            background-position: right center;
+            background-size: cover;
+        }
+        hero{
+            padding: 16px;
+            color: #FFFFFF;
+            background-color: var(--green-4-solf);
+        }
+        
+        
     </style>
 </head>
 
@@ -71,120 +118,165 @@
     <nav class="naving">
         <a href="../index.html" class="navHome">Touristic Moz</a>
     </nav>
-    <header>
-        <h2 style="padding: 16px; color: #FFFFFF; background-color: var(--green-4-solf);">Direct Flights to Mozambique</h2>
-    </header>
-    <main>
-        <div class="table-container">
-            <table class="flight-table">
-                <thead>
-                    <tr>
-                        <th>Departure City</th>
-                        <th>Country</th>
-                        <th>Departure Airport</th>
-                        <th>Destination Airport</th>
-                        <th>Airline(s)</th>
-                        <th>Direct Flight</th>
-                        <th>Approximate Flight Time</th>
-                        <th>Frequency</th>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>Lisbon</td>
-                        <td>Portugal</td>
-                        <td>LIS</td>
-                        <td>Maputo (MPM)</td>
-                        <td>TAP Air Portugal</td>
-                        <td>Yes</td>
-                        <td>11 h</td>
-                        <td>3 times per week</td>
-                    </tr>
+    <div class="contentBody">
+        <header>
+            <div class="hero">
+                <!-- TODO: troca esta imagem por uma relevante ao tema da página -->
+                <h1><span class="myLogo">Flights to Mozambique</span></h1>
+                <p>Your Gateway to Mozambique</p>
+            </div>
+        </header>
+        <main>
+            <p>
+                Maputo International Airport (MPM) is Mozambique's main gateway, with direct
+                connections from Europe, the Middle East, and several African cities. If your
+                starting point isn't listed below, expect at least one connection — most
+                commonly through Johannesburg, Doha, or Addis Ababa.
+            </p>
+            
+            <ul class="quick-facts">
+                <li><strong>Main airport:</strong> Maputo Intl. (MPM)</li>
+                <li><strong>From Europe:</strong> Lisbon only (TAP)</li>
+                <li><strong>From the Middle East:</strong> Doha only (Qatar Airways)</li>
+                <li><strong>No direct flights from:</strong> the Americas, Asia, Oceania</li>
+            </ul>
+            
+            <div class="table-container">
+                <table class="flight-table">
+                    <thead>
+                        <tr>
+                            <th>Departure City</th>
+                            <th>Country</th>
+                            <th>Departure Airport</th>
+                            <th>Destination Airport</th>
+                            <th>Airline(s)</th>
+                            <th>Approximate Flight Time</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
                     
-                    <tr>
-                        <td>Doha</td>
-                        <td>Qatar</td>
-                        <td>DOH</td>
-                        <td>Maputo (MPM)</td>
-                        <td>Qatar Airways</td>
-                        <td>Yes</td>
-                        <td>8 h</td>
-                        <td>Daily</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Addis Ababa</td>
-                        <td>Ethiopia</td>
-                        <td>ADD</td>
-                        <td>Maputo (MPM)</td>
-                        <td>Ethiopian Airlines</td>
-                        <td>Yes</td>
-                        <td>5 h 20 min</td>
-                        <td>Daily</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Johannesburg</td>
-                        <td>South Africa</td>
-                        <td>JNB</td>
-                        <td>Maputo (MPM)</td>
-                        <td>Airlink, LAM</td>
-                        <td>Yes</td>
-                        <td>1 h 10 min</td>
-                        <td>Multiple flights per day</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Cape Town</td>
-                        <td>South Africa</td>
-                        <td>CPT</td>
-                        <td>Maputo (MPM)</td>
-                        <td>Airlink</td>
-                        <td>Yes</td>
-                        <td>2 h 50 min</td>
-                        <td>Daily</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Durban</td>
-                        <td>South Africa</td>
-                        <td>DUR</td>
-                        <td>Maputo (MPM)</td>
-                        <td>Airlink</td>
-                        <td>Yes</td>
-                        <td>1 h 10 min</td>
-                        <td>Several times per week</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Luanda</td>
-                        <td>Angola</td>
-                        <td>LAD</td>
-                        <td>Maputo (MPM)</td>
-                        <td>TAAG Angola Airlines</td>
-                        <td>Yes</td>
-                        <td>4 h</td>
-                        <td>Several times per week</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Harare</td>
-                        <td>Zimbabwe</td>
-                        <td>HRE</td>
-                        <td>Maputo (MPM)</td>
-                        <td>LAM</td>
-                        <td>Yes</td>
-                        <td>1 h 40 min</td>
-                        <td>Several times per week</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p class="important">
+                    <tbody>
+                        <tr>
+                            <td>Lisbon</td>
+                            <td>Portugal</td>
+                            <td>LIS</td>
+                            <td>Maputo (MPM)</td>
+                            <td>TAP Air Portugal</td>
+                            <td>11 h</td>
+                            <td>3 times per week</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Doha</td>
+                            <td>Qatar</td>
+                            <td>DOH</td>
+                            <td>Maputo (MPM)</td>
+                            <td>Qatar Airways</td>
+                            <td>8 h</td>
+                            <td>Daily</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Addis Ababa</td>
+                            <td>Ethiopia</td>
+                            <td>ADD</td>
+                            <td>Maputo (MPM)</td>
+                            <td>Ethiopian Airlines</td>
+                            <td>5 h 20 min</td>
+                            <td>Daily</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Johannesburg</td>
+                            <td>South Africa</td>
+                            <td>JNB</td>
+                            <td>Maputo (MPM)</td>
+                            <td>Airlink, LAM</td>
+                            <td>1 h 10 min</td>
+                            <td>Multiple flights per day</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cape Town</td>
+                            <td>South Africa</td>
+                            <td>CPT</td>
+                            <td>Maputo (MPM)</td>
+                            <td>Airlink</td>
+                            <td>2 h 50 min</td>
+                            <td>Daily</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Durban</td>
+                            <td>South Africa</td>
+                            <td>DUR</td>
+                            <td>Maputo (MPM)</td>
+                            <td>Qatar Airways</td>
+                            <td>1 h 10 min</td>
+                            <td>3 times per week</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Luanda</td>
+                            <td>Angola</td>
+                            <td>LAD</td>
+                            <td>Maputo (MPM)</td>
+                            <td>TAAG Angola Airlines</td>
+                            <td>4 h</td>
+                            <td>Several times per week</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Harare</td>
+                            <td>Zimbabwe</td>
+                            <td>HRE</td>
+                            <td>Maputo (MPM)</td>
+                            <td>LAM</td>
+                            <td>1 h 40 min</td>
+                            <td>Several times per week</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="important">
                 <strong>Note:</strong> Flight times and frequencies are approximate and may change throughout the year. Please check with the airline before planning your trip.
             </p>
-    </main>
+            
+            <section class="flight-tips">
+                <h3>Good to Know Before You Book</h3>
+                <ul>
+                    <li>
+                        <strong>Book early for peak season.</strong> May–October (dry season) is
+                        when most routes fill up fastest, especially the Johannesburg-Maputo hop
+                        used by many travelers combining Mozambique with a South Africa or Kruger
+                        safari trip.
+                    </li>
+                    <li>
+                        <strong>No direct flights from the Americas or Asia.</strong> If you're
+                        coming from outside Europe, the Middle East, or Africa, expect at least
+                        one connection — commonly via Doha, Addis Ababa, or Johannesburg.
+                    </li>
+                    <li>
+                        <strong>Alternative airports exist.</strong> Depending on where in
+                        Mozambique you're headed, flying into Beira, Nampula, Vilanculos, or Pemba
+                        directly (via LAM, domestically) can save time versus routing everything
+                        through Maputo first.
+                    </li>
+                    <li>
+                        <strong>Check visa requirements before booking.</strong> Entry
+                        requirements depend on your nationality — see the
+                        <a href="../index.html#title_entry">Entry Requirements section</a> on the
+                        homepage before finalizing your trip.
+                    </li>
+                    <li>
+                        <strong>Airport transfers.</strong> Maputo International Airport is about
+                        a 15-20 minute drive from the city centre; metered taxis and ride-hailing
+                        apps are both available on arrival.
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer class="footer">
         <p>© 2026 Touristic Moz — Your guide to Mozambique</p>
         <nav class="footerNav">
