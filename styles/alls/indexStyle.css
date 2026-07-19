@@ -300,3 +300,9 @@ strong {
     background-size: cover;
     background-position: center;
 }
+.categoria#idMainPage{
+    background-image: url("../../imagens/beach_moz_long.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
