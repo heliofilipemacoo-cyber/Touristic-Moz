@@ -1,9 +1,10 @@
 /* Index All- Mobile first */
+@import url(../consts.css);
 
 html{
     scroll-behavior: smooth;
 }
-@import url(../consts.css);
+
 
 .myLogo {
     color: var(--green-2);
