@@ -1,5 +1,5 @@
 /* Index All- Mobile first */
-@import url(../consts.css);
+@import url(consts.css);
 
 html{
     scroll-behavior: smooth;
@@ -52,7 +52,8 @@ header {
     border: 2px solid var(--green-1);
     max-height: 360px;
     border-radius: 8px;
-    margin: 0px auto;
+    margin: 22px auto;
+    margin-bottom: 0px;
     width: 98%;
     background-color: #353d3b6c;
 }
@@ -60,7 +61,7 @@ header {
 .img_description {
     display: block;
     margin-right: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     text-align: right;
     font-size: .65em;
 }
@@ -238,13 +239,13 @@ a {
 }
 
 .important {
-    max-width: 660px;
-    margin: 20px 0px;
+    max-width: 550px;
+    display: block;
+    margin: 1.5em auto;
     background-color: #434645;
     color: #DEDEDE;
     border-radius: 22px;
-    border-end-start-radius: 0px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.57);
+    box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.678);
     padding: 18px;
     box-sizing: border-box;
 }
@@ -268,41 +269,41 @@ strong {
 
 /* Background Images */
 .hero {
-    background-image: url("../../imagens/beach_moz_long.webp");
+    background-image: url("../imagens/beach_moz_long.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .categoria#idPovincias {
-    background-image: url("../../imagens/praca-da-independencia-maputo.webp");
+    background-image: url("../imagens/praca-da-independencia-maputo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
 }
 
 .categoria#idNatureza {
-    background-image: url("../../imagens/river.webp");
+    background-image: url("../imagens/river.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
 }
 
 .categoria#idCulinaria {
-    background-image: url("../../imagens/rajas_temperos.webp");
+    background-image: url("../imagens/rajas_temperos.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .categoria#idVoos {
-    background-image: url("../../imagens/plane-window-sunset.webp");
+    background-image: url("../imagens/plane-window-sunset.webp");
       background-position: right center;
       background-size: cover;
 }
 
 .categoria#idMainPage{
-    background-image: url("../../imagens/beach_moz_long.webp");
+    background-image: url("../imagens/beach_moz_long.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

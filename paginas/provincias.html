@@ -4,98 +4,35 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="A tourist's guide to Mozambique's provinces: Maputo, Inhambane, Nampula, Sofala, and Cabo Delgado — what to see, when to go, and safety notes.">
+      <meta name="description"
+            content="A tourist's guide to Mozambique's provinces: Maputo, Inhambane, Nampula, Sofala, and Cabo Delgado — what to see, when to go, and safety notes.">
       <meta name="theme-color" content="#174e43">
       <link rel="canonical" href="https://touristicmoz.vercel.app/paginas/provincias.html">
 
       <meta property="og:type" content="website">
       <meta property="og:site_name" content="Touristic Moz">
       <meta property="og:title" content="Touristic Moz - Provinces">
-      <meta property="og:description" content="A tourist's guide to Mozambique's provinces: what to see, when to go, and safety notes.">
+      <meta property="og:description"
+            content="A tourist's guide to Mozambique's provinces: what to see, when to go, and safety notes.">
       <meta property="og:url" content="https://touristicmoz.vercel.app/paginas/provincias.html">
-      <meta property="og:image" content="https://touristicmoz.vercel.app/imagens/new/praca-da-independencia-maputo.webp">
+      <meta property="og:image"
+            content="https://touristicmoz.vercel.app/imagens/new/praca-da-independencia-maputo.webp">
       <meta property="og:locale" content="en_US">
 
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="Touristic Moz - Provinces">
-      <meta name="twitter:description" content="A tourist's guide to Mozambique's provinces: what to see, when to go, and safety notes.">
-      <meta name="twitter:image" content="https://touristicmoz.vercel.app/imagens/new/praca-da-independencia-maputo.webp">
+      <meta name="twitter:description"
+            content="A tourist's guide to Mozambique's provinces: what to see, when to go, and safety notes.">
+      <meta name="twitter:image"
+            content="https://touristicmoz.vercel.app/imagens/new/praca-da-independencia-maputo.webp">
 
       <title>Touristic Moz - Provinces</title>
 
       <link rel="stylesheet" href="../styles/consts.css" media="all">
-      <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
-      <link rel="stylesheet" href="../styles/alls/indexStyle.css">
-      <link rel="stylesheet" href="../styles/mediaQs/MQindexStyle.css">
-      <style type="text/css" media="all">
-            .hero {
-                  background-image: url(../imagens/praca-da-independencia-maputo.webp);
-            }
-            
-            main img {
-                  margin-top: 12px;
-            }
-            
-            .hero p {
-                  color: #DFDFDF;
-                  text-shadow: 1px 1px 2px #000000C7;
-            }
-            
-            .introduction p {
-                  margin-top: 16px;
-            }
-            
-            #introduction {
-                  word-wrap: break-word;
-                  text-wrap: wrap;
-            }
-            
-            .map_iframe {
-                  margin-top: 22px;
-            }
-            
-            .img_description {
-                  margin-bottom: 22px;
-            }
-            
-            aside {
-                  background-color: var(--backg-color-contentBody);
-            }
-            
-            .contentBody {
-                  box-shadow: none;
-            }
-            
-            .fastNaving.showShortCut {
-                  opacity: .94;
-                  box-shadow: 1px 4px 4px #0000007D;
-                  border: 1px solid black;
-                  background-color: #272727;
-                  transform: translateY(0px);
-            }
-            
-            .fastNaving.showShortCut:hover {
-                  background-color: #303030;
-                  opacity: 1;
-            }
-            
-            .fastNaving {
-                  display: grid;
-                  place-content: center;
-                  position: fixed;
-                  font-weight: bolder;
-                  z-index: 999;
-                  right: 12px;
-                  bottom: 12px;
-                  width: 55px;
-                  height: 55px;
-                  padding: 18px;
-                  border-radius: 100%;
-                  transition: all .3s;
-                  color: transparent;
-                  transform: translateY(60px);
-            }
-      </style>
+      <link rel="stylesheet" href="../styles/constsQ.css">
+      <link rel="stylesheet" href="../styles/indexStyle.css">
+      <link rel="stylesheet" href="../styles/mediaQ.css">
+      <link rel="stylesheet" href="../styles/pageStyle.css">
 </head>
 
 <body>
@@ -110,27 +47,27 @@
                   <img src="../imagens/icons/arrow_up.svg" alt="Back to navigation">
             </div>
       </a>
-      
+
       <!-- Nav igual em todas as páginas -->
       <nav class="naving">
             <a href="../index.html" class="navHome">Touristic Moz</a>
       </nav>
-      
+
       <div class="contentBody">
-            
+
             <!-- HERO: foto de fundo + título da página -->
             <header>
-                  <div class="hero">
+                  <div class="hero" id="provinces">
                         <!-- TODO: troca esta imagem por uma relevante ao tema da página -->
                         <h1><span class="myLogo">Provinces</span></h1>
                         <p>From Coast to Capital</p>
                   </div>
             </header>
-            
-            <main>
+
+            <main class="mainAboutMoz">
                   <!-- Secção de conteúdo principal -->
-                  <section class="mainAboutMoz">
-                        
+                  <article>
+
                         <!-- Navegação rápida interna, opcional (copia o padrão do index.html se a página for longa) -->
                         <section class="pageNav" id="IdPageNav">
                               <h2>Navigation</h2>
@@ -148,15 +85,21 @@
                         <section class="introduction" id="introduction">
                               <h2>Introduction & First Considerations</h2>
                               <p>
-                                    Mozambique is divided into <strong>10 provinces plus Maputo City</strong>, which holds
-                                    provincial status of its own. To keep this guide genuinely useful for travelers rather
-                                    than an exhaustive administrative list, <strong>we focus only on the provinces that offer real
-                                          value for a typical trip</strong>: places with established tourist infrastructure, notable
+                                    Mozambique is divided into <strong>10 provinces plus Maputo City</strong>, which
+                                    holds
+                                    provincial status of its own. To keep this guide genuinely useful for travelers
+                                    rather
+                                    than an exhaustive administrative list, <strong>we focus only on the provinces that
+                                          offer real
+                                          value for a typical trip</strong>: places with established tourist
+                                    infrastructure, notable
                                     attractions, and reasonably easy access.
                               </p>
                               <p>
-                                    Below you will find in-depth coverage of <strong>Maputo</strong> (capital and gateway to
-                                    the country), <strong>Inhambane</strong> (beaches and diving), <strong>Nampula</strong>
+                                    Below you will find in-depth coverage of <strong>Maputo</strong> (capital and
+                                    gateway to
+                                    the country), <strong>Inhambane</strong> (beaches and diving),
+                                    <strong>Nampula</strong>
                                     (home to the UNESCO-listed Ilha de Moçambique), <strong>Sofala</strong> (Gorongosa
                                     National Park and wildlife), and <strong>Cabo Delgado</strong> (the Quirimbas
                                     Archipelago).
@@ -170,11 +113,13 @@
                                     they're worth researching separately.
                               </p>
                         </section>
-                        
+
                         <section id="maputo_section">
                               <div class="attraction-main">
                                     <h3 id="maputo_title">Maputo</h3>
-                                    <img src="../imagens/maputoCidade.webp" alt="Maputo city skyline at sunset with the Maputo-Katembe bridge" loading="lazy">
+                                    <img src="../imagens/maputoCidade.webp"
+                                          alt="Maputo city skyline at sunset with the Maputo-Katembe bridge"
+                                          loading="lazy">
                                     <p>
                                           Mozambique's capital is where most trips begin — a lively mix of
                                           jacaranda-lined avenues, colonial-era architecture, and a fast-growing
@@ -187,12 +132,13 @@
                                           <li><strong>Malaria risk:</strong> Low</li>
                                     </ul>
                               </div>
-                              
+
                               <div class="plus_content">
                                     <h4>Other Attractions</h4>
                                     <ul class="other-attractions">
                                           <li>
-                                                <img src="../imagens/praca-da-independencia-maputo.webp" alt="Independence Square, Maputo" loading="lazy">
+                                                <img src="../imagens/praca-da-independencia-maputo.webp"
+                                                      alt="Independence Square, Maputo" loading="lazy">
                                                 <h5>Praça da Independência</h5>
                                                 <p>The city's central square, home to the City Hall and the
                                                       statue of Samora Machel.</p>
@@ -204,7 +150,7 @@
                                                       Eiffel's studio, still Maputo's working train station.</p>
                                           </li>
                                     </ul>
-                                    
+
                                     <h4>A Bit of History</h4>
                                     <p>
                                           Founded as a Portuguese trading post and long known as
@@ -213,7 +159,7 @@
                                           Portuguese colonial influence, blended with Art Deco buildings from
                                           the early 20th century.
                                     </p>
-                                    
+
                                     <h4>Culture</h4>
                                     <p>
                                           Maputo has a vibrant arts and music scene —
@@ -223,25 +169,33 @@
                                           design.
                                     </p>
                               </div>
-                              
-                              <button class="showMore" type="button" onclick="toggleShow(1)" title="Show or hide additional content">
+
+                              <button class="showMore" type="button" onclick="toggleShow(1)"
+                                    title="Show or hide additional content">
                                     Show more +
                               </button>
-                              
-                              <iframe class="map_iframe" title="Map of Maputo" src="https://www.google.com/maps?q=Maputo,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                              <span class="img_description">Map of Maputo - <a href="https://www.google.com/maps/search/?api=1&query=Maputo%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
-                              
+
+                              <iframe class="map_iframe" title="Map of Maputo"
+                                    src="https://www.google.com/maps?q=Maputo,Mozambique&output=embed" width="100%"
+                                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Maputo - <a
+                                          href="https://www.google.com/maps/search/?api=1&query=Maputo%2CMozambique"
+                                          rel="noopener" target="_blank">Google Maps</a></span>
+
                               <p class="why-visit">
                                     <strong>Why go:</strong> Maputo is the easiest entry point to Mozambique,
                                     with the country's main international airport, the best infrastructure,
                                     and a good first taste of the food and culture before heading further out.
                               </p>
                         </section>
-                        
+
                         <section id="inhambane_section">
                               <div class="attraction-main">
                                     <h3 id="inhambane_title">Inhambane</h3>
-                                    <img src="../imagens/beach_moz_long.webp" alt="Mozambique coastline, representative of Inhambane's beaches" loading="lazy">
+                                    <img src="../imagens/beach_moz_long.webp"
+                                          alt="Mozambique coastline, representative of Inhambane's beaches"
+                                          loading="lazy">
                                     <p>
                                           Mozambique's most popular beach destination, known above all for
                                           <strong>Tofo Beach</strong> — one of the few places in the world with
@@ -255,7 +209,7 @@
                                           <li><strong>Malaria risk:</strong> Moderate</li>
                                     </ul>
                               </div>
-                              
+
                               <div class="plus_content">
                                     <h4>Other Attractions</h4>
                                     <ul class="other-attractions">
@@ -272,7 +226,7 @@
                                                       buildings in the country.</p>
                                           </li>
                                     </ul>
-                                    
+
                                     <h4>A Bit of History</h4>
                                     <p>
                                           Inhambane is one of the oldest continuously inhabited settlements on
@@ -281,7 +235,7 @@
                                           making it one of the first parts of Mozambique to have contact with
                                           Portugal, well before Maputo grew into a city.
                                     </p>
-                                    
+
                                     <h4>Culture</h4>
                                     <p>
                                           The region has a strong dhow-sailing tradition and a relaxed,
@@ -289,14 +243,20 @@
                                           the landscape and the local cuisine.
                                     </p>
                               </div>
-                              
-                              <button class="showMore" type="button" onclick="toggleShow(2)" title="Show or hide additional content">
+
+                              <button class="showMore" type="button" onclick="toggleShow(2)"
+                                    title="Show or hide additional content">
                                     Show more +
                               </button>
-                              
-                              <iframe class="map_iframe" title="Map of Inhambane" src="https://www.google.com/maps?q=Inhambane,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                              <span class="img_description">Map of Inhambane - <a href="https://www.google.com/maps/search/?api=1&query=Inhambane%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
-                              
+
+                              <iframe class="map_iframe" title="Map of Inhambane"
+                                    src="https://www.google.com/maps?q=Inhambane,Mozambique&output=embed" width="100%"
+                                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Inhambane - <a
+                                          href="https://www.google.com/maps/search/?api=1&query=Inhambane%2CMozambique"
+                                          rel="noopener" target="_blank">Google Maps</a></span>
+
                               <p class="why-visit">
                                     <strong>Why go:</strong> if beaches and marine life are the priority,
                                     Inhambane is the single best-value stop in the country — good
@@ -304,11 +264,12 @@
                                     the logistics of a more remote trip.
                               </p>
                         </section>
-                        
+
                         <section id="sofala_section">
                               <div class="attraction-main">
                                     <h3 id="sofala_title">Sofala</h3>
-                                    <img src="../imagens/umElefanteNaFloresta.webp" alt="Elephant in Gorongosa National Park" loading="lazy">
+                                    <img src="../imagens/umElefanteNaFloresta.webp"
+                                          alt="Elephant in Gorongosa National Park" loading="lazy">
                                     <p>
                                           Home to <strong>Gorongosa National Park</strong>, one of Africa's
                                           great wildlife recovery stories — a war-ravaged reserve rebuilt over
@@ -321,23 +282,25 @@
                                           <li><strong>Malaria risk:</strong> High</li>
                                     </ul>
                               </div>
-                              
+
                               <div class="plus_content">
                                     <h4>Other Attractions</h4>
                                     <ul class="other-attractions">
                                           <li>
-                                                <img src="../imagens/rinoCom1filho.webp" alt="Rhino with calf in Gorongosa" loading="lazy">
+                                                <img src="../imagens/rinoCom1filho.webp"
+                                                      alt="Rhino with calf in Gorongosa" loading="lazy">
                                                 <h5>Rhino Sightings</h5>
                                                 <p>Part of the park's ongoing reintroduction program.</p>
                                           </li>
                                           <li>
-                                                <img src="../imagens/umaGazela.webp" alt="Impala in Gorongosa" loading="lazy">
+                                                <img src="../imagens/umaGazela.webp" alt="Impala in Gorongosa"
+                                                      loading="lazy">
                                                 <h5>Beira</h5>
                                                 <p>Sofala's coastal capital, with Indian Ocean beaches and
                                                       colonial architecture.</p>
                                           </li>
                                     </ul>
-                                    
+
                                     <h4>A Bit of History</h4>
                                     <p>
                                           Gorongosa was once one of Africa's premier safari parks in the
@@ -346,7 +309,7 @@
                                           brought numbers back dramatically, making it one of the continent's
                                           most remarkable conservation comeback stories.
                                     </p>
-                                    
+
                                     <h4>Culture</h4>
                                     <p>
                                           The park works closely with surrounding communities on conservation
@@ -355,25 +318,33 @@
                                           history.
                                     </p>
                               </div>
-                              
-                              <button class="showMore" type="button" onclick="toggleShow(3)" title="Show or hide additional content">
+
+                              <button class="showMore" type="button" onclick="toggleShow(3)"
+                                    title="Show or hide additional content">
                                     Show more +
                               </button>
-                              
-                              <iframe class="map_iframe" title="Map of Sofala" src="https://www.google.com/maps?q=Gorongosa+National+Park,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                              <span class="img_description">Map of Sofala - <a href="https://www.google.com/maps/search/?api=1&query=Gorongosa%20National%20Park%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
-                              
+
+                              <iframe class="map_iframe" title="Map of Sofala"
+                                    src="https://www.google.com/maps?q=Gorongosa+National+Park,Mozambique&output=embed"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Sofala - <a
+                                          href="https://www.google.com/maps/search/?api=1&query=Gorongosa%20National%20Park%2CMozambique"
+                                          rel="noopener" target="_blank">Google Maps</a></span>
+
                               <p class="why-visit">
                                     <strong>Why go:</strong> for genuine safari wildlife in Mozambique,
                                     Gorongosa is the clearest choice — a strong alternative to Kruger or the
                                     Serengeti, with the added story of a park actively being rebuilt.
                               </p>
                         </section>
-                        
+
                         <section id="nampula_section">
                               <div class="attraction-main">
                                     <h3 id="nampula_title">Nampula</h3>
-                                    <img src="../imagens/gerdos-fortaleza.webp" alt="Historic relief at the Fortress of São Sebastião, Ilha de Moçambique" loading="lazy">
+                                    <img src="../imagens/gerdos-fortaleza.webp"
+                                          alt="Historic relief at the Fortress of São Sebastião, Ilha de Moçambique"
+                                          loading="lazy">
                                     <p>
                                           Home to <strong>Ilha de Moçambique</strong>, a tiny coral island and
                                           UNESCO World Heritage Site that gave the entire country its name —
@@ -386,7 +357,7 @@
                                           <li><strong>Malaria risk:</strong> High</li>
                                     </ul>
                               </div>
-                              
+
                               <div class="plus_content">
                                     <h4>Other Attractions</h4>
                                     <ul class="other-attractions">
@@ -403,7 +374,7 @@
                                                       and Portuguese architecture side by side.</p>
                                           </li>
                                     </ul>
-                                    
+
                                     <h4>A Bit of History</h4>
                                     <p>
                                           Ilha de Moçambique was a major Indian Ocean trading post centuries
@@ -412,7 +383,7 @@
                                           Swahili-Arab-Indian-Portuguese history is why it was named a UNESCO
                                           World Heritage Site in 1991.
                                     </p>
-                                    
+
                                     <h4>Culture</h4>
                                     <p>
                                           The island blends Makhuwa, Swahili and Portuguese influences,
@@ -421,14 +392,20 @@
                                           artisans today.
                                     </p>
                               </div>
-                              
-                              <button class="showMore" type="button" onclick="toggleShow(4)" title="Show or hide additional content">
+
+                              <button class="showMore" type="button" onclick="toggleShow(4)"
+                                    title="Show or hide additional content">
                                     Show more +
                               </button>
-                              
-                              <iframe class="map_iframe" title="Map of Nampula" src="https://www.google.com/maps?q=Ilha+de+Mocambique,Nampula,Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                              <span class="img_description">Map of Nampula - <a href="https://www.google.com/maps/search/?api=1&query=Ilha%20de%20Mocambique%2CNampula%2CMozambique" rel="noopener" target="_blank">Google Maps</a></span>
-                              
+
+                              <iframe class="map_iframe" title="Map of Nampula"
+                                    src="https://www.google.com/maps?q=Ilha+de+Mocambique,Nampula,Mozambique&output=embed"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Nampula - <a
+                                          href="https://www.google.com/maps/search/?api=1&query=Ilha%20de%20Mocambique%2CNampula%2CMozambique"
+                                          rel="noopener" target="_blank">Google Maps</a></span>
+
                               <p class="why-visit">
                                     <strong>Why go:</strong> for travelers who want history and culture over
                                     beaches or safari, Ilha de Moçambique offers something no other province
@@ -436,11 +413,11 @@
                                     in today.
                               </p>
                         </section>
-                        
+
                         <section id="cabo_delgado_section">
                               <div class="attraction-main">
                                     <h3 id="cabo_delgado_title">Cabo Delgado</h3>
-                                    
+
                                     <p class="important">
                                           <strong>⚠ Safety Notice:</strong> Cabo Delgado is currently subject to
                                           "avoid all travel" advisories from several governments (including the US,
@@ -448,9 +425,9 @@
                                           since 2017. Before planning any visit, check your own government's
                                           official travel advisory for Mozambique.
                                     </p>
-                                    
+
                                     <h4>The Quirimbas Archipelago</h4>
-                                    
+
                                     <p>
                                           Historically, Cabo Delgado has been home to the <strong>Quirimbas
                                                 Archipelago</strong> — a chain of pristine coral islands considered one
@@ -458,11 +435,15 @@
                                           along the coast, it's made up of around 32 coral islands, most of them
                                           uninhabited and untouched by mass tourism.
                                     </p>
-                                    <img src="../imagens/quilalea_in_mozambique.webp" alt="Quilalea in Mozambique, part of the Quirimbas Archipelago" loading="lazy">
+                                    <img src="../imagens/quilalea_in_mozambique.webp"
+                                          alt="Quilalea in Mozambique, part of the Quirimbas Archipelago"
+                                          loading="lazy">
                                     <p class="img_description">
                                           Photo: "Quilalea in Mozambique" by
-                                          <a href="https://en.wikipedia.org/wiki/User:Etimbo" target="_blank" rel="noopener noreferrer">Etimbo</a>,
-                                          <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>,
+                                          <a href="https://en.wikipedia.org/wiki/User:Etimbo" target="_blank"
+                                                rel="noopener noreferrer">Etimbo</a>,
+                                          <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"
+                                                rel="noopener noreferrer">CC BY-SA 3.0</a>,
                                           via Wikimedia Commons
                                     </p>
                                     <ul class="quick-facts">
@@ -472,7 +453,7 @@
                                           <li><strong>Malaria risk:</strong> High</li>
                                     </ul>
                               </div>
-                              
+
                               <div class="plus_content">
                                     <h4>Other Attractions</h4>
                                     <ul class="other-attractions">
@@ -491,7 +472,7 @@
                                                       coastline.</p>
                                           </li>
                                     </ul>
-                                    
+
                                     <h4>A Bit of History</h4>
                                     <p>
                                           Long before European colonization, Cabo Delgado's coast — particularly
@@ -501,7 +482,7 @@
                                           international investment to the province, reshaping its economy
                                           alongside the security challenges mentioned above.
                                     </p>
-                                    
+
                                     <h4>Culture</h4>
                                     <p>
                                           The province is home to the <strong>Makonde</strong> people, celebrated
@@ -512,14 +493,20 @@
                                           frontier with Tanzania.
                                     </p>
                               </div>
-                              
-                              <button class="showMore" type="button" onclick="toggleShow(5)" title="Show or hide additional content">
+
+                              <button class="showMore" type="button" onclick="toggleShow(5)"
+                                    title="Show or hide additional content">
                                     Show more +
                               </button>
-                              
-                              <iframe class="map_iframe" title="Map of Cabo Delgado" src="https://www.google.com/maps?q=Cabo+Delgado,+Mozambique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                              <span class="img_description">Map of Cabo Delgado - <a href="https://maps.app.goo.gl/RW3FfJDHCcS71wNu5" rel="noopener" target="_blank">Google Maps</a></span>
-                              
+
+                              <iframe class="map_iframe" title="Map of Cabo Delgado"
+                                    src="https://www.google.com/maps?q=Cabo+Delgado,+Mozambique&output=embed"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <span class="img_description">Map of Cabo Delgado - <a
+                                          href="https://maps.app.goo.gl/RW3FfJDHCcS71wNu5" rel="noopener"
+                                          target="_blank">Google Maps</a></span>
+
                               <p class="why-visit why-visit--caution">
                                     <strong>Current outlook:</strong> given the ongoing security situation, we're
                                     not able to recommend independent travel to this province at this time. If you
@@ -527,7 +514,7 @@
                                     and your embassy beforehand.
                               </p>
                         </section>
-                  </section>
+                  </article>
             </main>
       </div>
       <aside>
@@ -539,7 +526,7 @@
                         </div>
                   </section>
             </a>
-            
+
             <a href="directFligts_Table.html" rel="next">
                   <section class="categoria" id="idVoos">
                         <h2>Flights</h2>
@@ -551,7 +538,7 @@
                   </section>
             </a>
       </aside>
-      
+
       <!-- Footer igual em todas as páginas -->
       <footer class="footer">
             <p>© 2026 Touristic Moz — Your guide to Mozambique</p>
@@ -562,11 +549,11 @@
                   <a href="directFligts_Table.html">Flights</a>
             </nav>
       </footer>
-      
+
       <script type="text/javascript" charset="utf-8">
             const showMore_list = document.querySelectorAll(".showMore");
             const plus_content_list = document.querySelectorAll(".plus_content");
-            
+
             function toggleShow(index) {
                   index--;
                   if (plus_content_list[index].classList.contains("show")) {
@@ -578,16 +565,16 @@
                   }
             }
             const fastNaving = document.querySelector(".fastNaving");
-        window.addEventListener(
-            "scroll",
-            function() {
-                if (window.scrollY >= document.querySelector(".pageNav").scrollHeight && window.scrollY <= document.querySelector("main").scrollHeight) {
-                    fastNaving.classList.add("showShortCut");
-                } else {
-                    fastNaving.classList.remove("showShortCut");
-                }
-            }
-        )
+            window.addEventListener(
+                  "scroll",
+                  function () {
+                        if (window.scrollY >= document.querySelector(".pageNav").scrollHeight && window.scrollY <= document.querySelector("main").scrollHeight) {
+                              fastNaving.classList.add("showShortCut");
+                        } else {
+                              fastNaving.classList.remove("showShortCut");
+                        }
+                  }
+            )
       </script>
 </body>
 

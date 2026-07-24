@@ -4,131 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Direct flight routes to Maputo, Mozambique from major cities worldwide, with approximate flight times and frequency.">
+    <meta name="description"
+        content="Direct flight routes to Maputo, Mozambique from major cities worldwide, with approximate flight times and frequency.">
     <meta name="theme-color" content="#174e43">
     <link rel="canonical" href="https://touristicmoz.vercel.app/paginas/directFligts_Table.html">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Touristic Moz">
     <meta property="og:title" content="Touristic Moz - Direct Flights to Mozambique">
-    <meta property="og:description" content="Direct flight routes to Maputo, Mozambique from major cities worldwide, with approximate flight times and frequency.">
+    <meta property="og:description"
+        content="Direct flight routes to Maputo, Mozambique from major cities worldwide, with approximate flight times and frequency.">
     <meta property="og:url" content="https://touristicmoz.vercel.app/paginas/directFligts_Table.html">
     <meta property="og:image" content="https://touristicmoz.vercel.app/imagens/plane-window-sunset.webp">
     <meta property="og:locale" content="en_US">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Touristic Moz - Direct Flights to Mozambique">
-    <meta name="twitter:description" content="Direct flight routes to Maputo, Mozambique from major cities worldwide, with approximate flight times and frequency.">
+    <meta name="twitter:description"
+        content="Direct flight routes to Maputo, Mozambique from major cities worldwide, with approximate flight times and frequency.">
     <meta name="twitter:image" content="https://touristicmoz.vercel.app/imagens/plane-window-sunset.webp">
 
     <title>Touristic Moz - Direct Flights to Mozambique</title>
 
     <link rel="stylesheet" href="../styles/consts.css" media="all">
-    <link rel="stylesheet" href="../styles/mediaQs/constsQ.css">
-    <link rel="stylesheet" href="../styles/alls/indexStyle.css">
-    <link rel="stylesheet" href="../styles/mediaQs/MQindexStyle.css">
-    <style>
-        body {
-            overflow: auto;
-        }
-        
-        main {
-            padding: 8px;
-        }
-        
-        .flight-table {
-            width: 100%;
-            overflow: auto;
-            border-collapse: collapse;
-        }
-        
-        td {
-            padding: 10px 6px;
-            text-align: center;
-        }
-        
-        th {
-            text-transform: capitalize;
-            padding: 10px 6px;
-            min-width: 120px;
-            font-weight: bold;
-            font-size: 1.05em;
-            text-align: center;
-        }
-        
-        .flight-table th {
-            background-color: var(--green-4-solf);
-            color: #FFFFFF;
-        }
-        
-        .flight-table tr:nth-child(even) {
-            background-color: var(--backg-color-contentBody);
-            color: var(--text-default--color);
-        }
-        
-        .flight-table tr:nth-child(odd) {
-            background-color: #FFFFFF;
-            color: var(--text-default--color);
-        }
-        
-        .theader {
-            position: sticky;
-            top: 0px;
-            left: 0px;
-        }
-        
-        h2 {
-            font-size: 2.2rem;
-        }
-        
-        .table-container {
-            overflow: auto;
-            margin: 22px 0px;
-            border-radius: 8px;
-            box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-        }
-        
-        .quick-facts {
-            display: flex;
-            flex-flow: row wrap;
-            gap: 8px;
-            list-style: none;
-            padding: 0;
-            margin: 16px 0;
-        }
-        
-        .quick-facts li {
-            background: var(--backg-color-contentBody);
-            border-radius: 6px;
-            padding: 6px 10px;
-            font-size: 0.85rem;
-        }
-        
-        .flight-tips h3 {
-            margin-top: 28px;
-        }
-        
-        .flight-tips ul {
-            padding-left: 20px;
-        }
-        
-        .flight-tips li {
-            margin-bottom: 8px;
-        }
-        
-        .hero {
-            background-image: url("../../imagens/plane-window-sunset.webp");
-            background-position: right center;
-            background-size: cover;
-        }
-        hero{
-            padding: 16px;
-            color: #FFFFFF;
-            background-color: var(--green-4-solf);
-        }
-        
-        
-    </style>
+    <link rel="stylesheet" href="../styles/constsQ.css">
+    <link rel="stylesheet" href="../styles/indexStyle.css">
+    <link rel="stylesheet" href="../styles/mediaQ.css">
+    <link rel="stylesheet" href="../styles/pageStyle.css">
 </head>
 
 <body>
@@ -137,7 +39,7 @@
     </nav>
     <div class="contentBody">
         <header>
-            <div class="hero">
+            <div class="hero" id="flights">
                 <!-- TODO: troca esta imagem por uma relevante ao tema da página -->
                 <h1><span class="myLogo">Flights to Mozambique</span></h1>
                 <p>Your Gateway to Mozambique</p>
@@ -150,14 +52,14 @@
                 starting point isn't listed below, expect at least one connection — most
                 commonly through Johannesburg, Doha, or Addis Ababa.
             </p>
-            
+
             <ul class="quick-facts">
                 <li><strong>Main airport:</strong> Maputo Intl. (MPM)</li>
                 <li><strong>From Europe:</strong> Lisbon only (TAP)</li>
                 <li><strong>From the Middle East:</strong> Doha only (Qatar Airways)</li>
                 <li><strong>No direct flights from:</strong> the Americas, Asia, Oceania</li>
             </ul>
-            
+
             <div class="table-container">
                 <table class="flight-table">
                     <thead>
@@ -171,7 +73,7 @@
                             <th>Frequency</th>
                         </tr>
                     </thead>
-                    
+
                     <tbody>
                         <tr>
                             <td>Lisbon</td>
@@ -182,7 +84,7 @@
                             <td>11 h</td>
                             <td>3 times per week</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Doha</td>
                             <td>Qatar</td>
@@ -192,7 +94,7 @@
                             <td>8 h</td>
                             <td>Daily</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Addis Ababa</td>
                             <td>Ethiopia</td>
@@ -202,7 +104,7 @@
                             <td>5 h 20 min</td>
                             <td>Daily</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Johannesburg</td>
                             <td>South Africa</td>
@@ -212,7 +114,7 @@
                             <td>1 h 10 min</td>
                             <td>Multiple flights per day</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Cape Town</td>
                             <td>South Africa</td>
@@ -222,7 +124,7 @@
                             <td>2 h 50 min</td>
                             <td>Daily</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Durban</td>
                             <td>South Africa</td>
@@ -232,7 +134,7 @@
                             <td>1 h 10 min</td>
                             <td>3 times per week</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Luanda</td>
                             <td>Angola</td>
@@ -242,7 +144,7 @@
                             <td>4 h</td>
                             <td>Several times per week</td>
                         </tr>
-                        
+
                         <tr>
                             <td>Harare</td>
                             <td>Zimbabwe</td>
@@ -256,9 +158,10 @@
                 </table>
             </div>
             <p class="important">
-                <strong>Note:</strong> Flight times and frequencies are approximate and may change throughout the year. Please check with the airline before planning your trip.
+                <strong>Note:</strong> Flight times and frequencies are approximate and may change throughout the year.
+                Please check with the airline before planning your trip.
             </p>
-            
+
             <section class="flight-tips">
                 <h3>Good to Know Before You Book</h3>
                 <ul>
