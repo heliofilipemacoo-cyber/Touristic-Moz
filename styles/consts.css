@@ -8,16 +8,48 @@
     --green-1-hover: #4d9987;
     --green-4-solf: #174e43;
     --green-4-dark: #0a2c26;
-    
+
+    /* Commun Colors */
+    --commun-color-white: #fff;
+    --commun-color-black: #000;
+    --commun-color-lightGrey: #dedede;
+
+    /* Commun Shadow */
+    --commun-shadow-deep: #000000ad;
+    --commun-shadow-mid: #0000008f;
+    --commun-shadow-low: #00000060;
+
     /* Int Scales */
-    --size-level-1: 8px;
-    --size-level-2: 12px;
-    --size-level-3: 16px;
-    --size-level-4: 18px;
+    --size-8: 8px;
+    --size-10: 10px;
+    --size-12: 12px;
+    --size-16: 16px;
+    --size-18: 18px;
+    --size-20: 20px;
+    --size-22: 22px;
+    --size-24: 24px;
+    --size-26: 26px;
+    --size-28: 28px;
+
+    --size-32: 32px;
+    --size-36: 36px;
+    --size-40: 40px;
+    --size-60: 60px;
+
+
+    --size-220: 220px;
+    --size-800: 800px;
+    --size-550: 550px;
+    --size-360: 360px;
+    --size-280: 280px;
+
+    /* Radius */
+    --radius-8: 8px;
+    --radius-22: 22px;
     
     /* BackGrounds */
     --backg-color-contentBody: #E9E9E9;
-    
+
     /* Text */
     --text-default--color: #08231E;
     
@@ -27,15 +59,15 @@
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: var(--size-32);
 }
 
 section p {
-    margin-top: 8px;
+    margin-top: var(--size-8);
 }
 
 section p:last-of-type {
-    margin-bottom: 40px;
+    margin-bottom: var(--size-40);
 }
 
 section p:first-of-type {
@@ -48,7 +80,7 @@ section p:first-of-type {
 
 .naving {
     background: var(--green-4-solf);
-    height: 60px;
+    height: var(--size-60);
     width: 100%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.808);
     display: flex;
@@ -58,7 +90,7 @@ section p:first-of-type {
 
 .naving .navHome {
     display: inline-block;
-    color: #FFFFFF;
+    color: var(--commun-color-white);
     font-family: var(--h-font-family);
     font-size: 1.3rem;
     font-weight: bold;
@@ -74,13 +106,13 @@ section p:first-of-type {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 20px var(--size-level-3);
+    gap: var(--size-12);
+    padding: var(--size-20) var(--size-16);
     text-align: center;
 }
 
 .footer p {
-    color: #DEDEDE;
+    color: var(--commun-color-lightGrey);
     font-size: .85rem;
 }
 
@@ -88,12 +120,12 @@ section p:first-of-type {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 16px;
+    gap: var(--size-16);
 }
 
 .footerNav a {
     display: inline-block;
-    color: #FFFFFF;
+    color: var(--commun-color-white);
     font-size: .9rem;
     text-decoration: underline;
 }
@@ -112,7 +144,7 @@ h5 {
     text-transform: capitalize;
     font-weight: bold;
     letter-spacing: 1%;
-    text-shadow: 1px 1px 2px #0000008A;
+    text-shadow: 1px 1px 2px var(--commun-shadow-mid);
 }
 
 .navHome {
@@ -130,13 +162,13 @@ h2 {
 
 h3 {
     font-size: 1.4em;
-    margin-top: 16px;
-    margin-bottom: 8px;
+    margin-top: var(--size16);
+    margin-bottom: var(--size-8);
 }
 
 h4 {
     font-size: 1.2em;
-    margin-top: 18px;
+    margin-top: var(--size-18);
     margin-bottom: 0px;
 }
 
@@ -150,7 +182,7 @@ h5::before {
 
 h5 {
     font-size: 1em;
-    margin-top: 16px;
+    margin-top: var(--size-16);
     margin-bottom: 0px;
 }
 
@@ -189,26 +221,26 @@ li {
     box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.747);
     display: block;
     overflow: hidden;
-    max-width: 800px;
+    max-width: var(--size-800);
     margin: 0 auto;
 }
 iframe {
     display: block;
-    margin: 22px auto;
-    margin-bottom: 18px;
-    box-shadow: inset 0px 0px 8px #00000075;
+    margin: var(--size-22) auto;
+    margin-bottom: var(--size-18);
+    box-shadow: inset 0px 0px 8px var(--commun-shadow-mid);
     outline: 2px solid #073d28;
     border: 2px solid var(--green-1);
-    max-height: 360px;
-    max-width: 550px;
+    max-height: var(--size-360);
+    max-width: var(--size-550);
     border-radius: 8px;
     width: 98%;
     background-color: #353d3b6c;
 }
 
 ::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
+    height: var(--size-10);
+    width: var(--size-10);
 }
 
 ::-webkit-scrollbar-button {
@@ -217,7 +249,7 @@ iframe {
 
 ::-webkit-scrollbar-thumb {
     border-radius: var(--size-level-4);
-    box-shadow: inset 2px 2px 3px black;
+    box-shadow: inset 2px 2px 3px var(--commun-color-var(--commun-color-black));
     background-color: var(--text-default--color);
     border-left: 1px solid var(--green-1);
 }
@@ -240,10 +272,10 @@ iframe {
 .other-attractions {
     display: flex;
     flex-flow: row wrap;
-    gap: 12px;
+    gap: var(--size-12);
     list-style: none;
     padding: 0;
-    margin: 12px 0;
+    margin: var(--size-12) 0;
 }
 
 .other-attractions>li:before {
@@ -252,7 +284,7 @@ iframe {
 
 .other-attractions li {
     flex: 1 1 140px;
-    max-width: 220px;
+    max-width: var(--size-220);
 }
 
 .other-attractions img {
@@ -270,8 +302,8 @@ iframe {
 .why-visit {
     background: var(--backg-color-contentBody);
     border-left: 4px solid var(--green-1);
-    padding: 12px;
-    margin-top: 12px;
+    padding: var(--size-12);
+    margin-top: var(--size-12);
 }
 
 .other-attractions h5 {
@@ -283,16 +315,16 @@ iframe {
 .quick-facts {
     display: flex;
     flex-flow: row wrap;
-    gap: 8px;
+    gap: var(--size-8);
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: var(--size-12) 0;
 }
 
 .quick-facts li {
     background: var(--backg-color-contentBody);
     border-radius: 6px;
-    padding: 6px 10px;
+    padding: 6px var(--size-12);
     font-size: 0.85rem;
 }
 
@@ -301,7 +333,7 @@ iframe {
     height: 160px;
     border-radius: 6px;
     background: var(--green-4-solf);
-    color: #FFFFFF;
+    color: var(--commun-color-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,11 +348,11 @@ iframe {
 }
 .coming-soon-hero {
       position: relative;
-      height: 280px;
+      height: var(--size-280);
       width: 100%;
       background-size: cover;
       background-position: center;
-      border-radius: 8px;
+      border-radius: var(--radius-8);
       overflow: hidden;
 }
 
@@ -352,7 +384,7 @@ aside > section{
 .coming-soon-overlay strong {
       background: rgba(255, 255, 255, 0.75);
       color: var(--green-4-solf);
-      padding: 8px 22px;
+      padding: var(--size-8) var(--size-22);
       border-radius: 6px;
       font-size: 1.4rem;
       letter-spacing: 1px;
@@ -361,10 +393,10 @@ aside > section{
 .coming-soon-overlay p {
       background: rgba(255, 255, 255, 0.6);
       color: var(--text-default--color);
-      padding: 6px 16px;
+      padding: 6px var(--size-16);
       border-radius: 6px;
       font-size: 0.9rem;
-      max-width: 280px;
+      max-width: var(--size-280);
 }
 
 

@@ -37,8 +37,8 @@ aside {
 
 .fastNaving.showShortCut {
     opacity: .94;
-    box-shadow: 1px 4px 4px #0000007D;
-    border: 1px solid black;
+    box-shadow: 1px 4px 4px var(--commun-shadow-mid);
+    border: 1px solid var(--commun-color-black);
     background-color: #272727;
     transform: translateY(0px);
 }
@@ -54,8 +54,8 @@ aside {
     position: fixed;
     font-weight: bolder;
     z-index: 999;
-    right: 12px;
-    bottom: 12px;
+    right: var(--size-12);
+    bottom: var(--size-12);
     width: 55px;
     height: 55px;
     padding: 18px;
@@ -76,13 +76,13 @@ body {
 }
 
 td {
-    padding: 10px 6px;
+    padding: var(--size-10) 6px;
     text-align: center;
 }
 
 th {
     text-transform: capitalize;
-    padding: 10px 6px;
+    padding: var(--size-10) 6px;
     min-width: 120px;
     font-weight: bold;
     font-size: 1.05em;
@@ -91,7 +91,7 @@ th {
 
 .flight-table th {
     background-color: var(--green-4-solf);
-    color: #FFFFFF;
+    color: var(--commun-color-white);
 }
 
 .flight-table tr:nth-child(even) {
@@ -100,7 +100,7 @@ th {
 }
 
 .flight-table tr:nth-child(odd) {
-    background-color: #FFFFFF;
+    background-color: var(--commun-color-white);
     color: var(--text-default--color);
 }
 
@@ -112,7 +112,7 @@ th {
 
 .table-container {
     overflow: auto;
-    margin: 22px 0px;
+    margin: var(--size-22) 0px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
@@ -129,7 +129,7 @@ th {
 .quick-facts li {
     background: var(--backg-color-contentBody);
     border-radius: 6px;
-    padding: 6px 10px;
+    padding: 6px var(--size-10);
     font-size: 0.85rem;
 }
 
@@ -138,7 +138,7 @@ th {
 }
 
 .flight-tips ul {
-    padding-left: 20px;
+    padding-left: var(--size-20);
 }
 
 .flight-tips li {
@@ -152,7 +152,7 @@ th {
     background-position: center;
     border-radius: 8px;
     overflow: hidden;
-    margin: 12px 0;
+    margin: var(--size-12) 0;
 }
 
 .coming-soon-hero::before {
@@ -179,7 +179,7 @@ th {
 .coming-soon-overlay strong {
     background: rgba(255, 255, 255, 0.75);
     color: var(--green-4-solf);
-    padding: 8px 22px;
+    padding: 8px var(--size-22);
     border-radius: 6px;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -203,12 +203,12 @@ th {
     background-position: right center;
     background-size: cover;
     padding: 16px;
-    color: #FFFFFF;
+    color: var(--commun-color-white);
     background-color: var(--green-4-solf);
 }
 
 .hero#provinces {
     background-image: url(../imagens/praca-da-independencia-maputo.webp);
     color: #DFDFDF;
-    text-shadow: 1px 1px 2px #000000C7;
+    text-shadow: 1px 1px 2px var(--commun-shadow-mid);
 }
