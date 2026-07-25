@@ -187,9 +187,9 @@
                         </section>
                     </div>
 
-                    <button class="showMore" type="button" onclick="toggleShow(1)"
+                    <button class="readMore" type="button" onclick="toggleShow(1)"
                         title="Show or hide additional content">
-                        Show more +
+                        Read more +
                     </button>
                     <!-- 
                     <section>
@@ -200,7 +200,7 @@
                         <div class="plus_content">
                             #more content
                         </div>
-                        <span class="showMore" onclick="toggleShow(n)" title="Shows or Hides Content">Show more +</span>
+                        <span class="readMore" onclick="toggleShow(n)" title="Shows or Hides Content">Read more +</span>
                     </section>
                     -->
                 </section>
@@ -305,9 +305,9 @@
                         </p>
                     </div>
 
-                    <button class="showMore" type="button" onclick="toggleShow(2)"
+                    <button class="readMore" type="button" onclick="toggleShow(2)"
                         title="Show or hide additional content">
-                        Show more +
+                        Read more +
                     </button>
                 </section>
                 <section>
@@ -367,9 +367,9 @@
                         </p>
                     </div>
 
-                    <button class="showMore" type="button" onclick="toggleShow(3)"
+                    <button class="readMore" type="button" onclick="toggleShow(3)"
                         title="Show or hide additional content">
-                        Show more +
+                        Read more +
                     </button>
                 </section>
             </section>
@@ -442,17 +442,17 @@
             }
         )
 
-        const showMore_list = document.querySelectorAll(".showMore");
+        const readMore_list = document.querySelectorAll(".readMore");
         const plus_content_list = document.querySelectorAll(".plus_content");
 
         function toggleShow(index) {
             index--;
             if (plus_content_list[index].classList.contains("show")) {
                 plus_content_list[index].classList.remove("show");
-                showMore_list[index].innerHTML = "<span>Show more +</span>";
+                readMore_list[index].innerHTML = "<span>Read more +</span>";
             } else {
                 plus_content_list[index].classList.add("show");
-                showMore_list[index].innerHTML = "<span>Show less -</span>";
+                readMore_list[index].innerHTML = "<span>Read less -</span>";
             }
         }
     </script>

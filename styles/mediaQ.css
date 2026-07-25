@@ -16,6 +16,9 @@
         height: 48px;
         padding: 18px;
     }
+    .mainAboutMoz {
+    padding: var(--size-16);
+}
 
     .map_iframe {
         max-height: 500px;
@@ -24,6 +27,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1444px) {
+
+    .naving{
+        justify-content: center;
+    }
 
     /* Pc */
     * {
@@ -45,6 +52,9 @@
     .contentBody {
         margin: 0 auto;
     }
+    .mainAboutMoz {
+    padding: var(--size-22);
+}
 }
 
 @media print {
@@ -55,6 +65,10 @@
 @media screen and (min-width: 1444px) {
 
     /* Tv/+ */
+
+    .naving{
+        justify-content: center;
+    }
     .fastNaving {
         right: var(--size-20);
         bottom: var(--size-20);
@@ -70,4 +84,7 @@
     .contentBody {
         margin: 0 auto;
     }
+    .mainAboutMoz {
+    padding: var(--size-24);
+}
 }

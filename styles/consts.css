@@ -43,6 +43,8 @@
     --size-360: 360px;
     --size-280: 280px;
 
+    --size-contentBody: 600px;
+
     /* Radius */
     --radius-8: 8px;
     --radius-22: 22px;
@@ -75,7 +77,7 @@ section p:first-of-type {
 }
 
 .mainAboutMoz {
-    padding: var(--size-level-3);
+    padding: var(--size-22);
 }
 
 .naving {
@@ -85,7 +87,7 @@ section p:first-of-type {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.808);
     display: flex;
     align-items: center;
-    padding: 0 var(--size-level-3);
+    padding: 0 var(--size-12);
 }
 
 .naving .navHome {
@@ -221,7 +223,7 @@ li {
     box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.747);
     display: block;
     overflow: hidden;
-    max-width: var(--size-800);
+    max-width: var(--size-contentBody);
     margin: 0 auto;
 }
 iframe {
@@ -248,14 +250,14 @@ iframe {
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: var(--size-level-4);
+    border-radius: var(--size-16);
     box-shadow: inset 2px 2px 3px var(--commun-color-var(--commun-color-black));
     background-color: var(--text-default--color);
     border-left: 1px solid var(--green-1);
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: var(--size-level-1);
+    border-radius: var(--size-8);
 }
 
 ::-webkit-scrollbar-track-piece {

@@ -4,9 +4,6 @@
 
 
 
-h2 {
-    font-size: 2.2rem;
-}
 main {
     padding: 16px;
 }
@@ -20,7 +17,6 @@ main {
     text-wrap: wrap;
 }
 img {
-    max-width: 100%;
     height: auto;
     max-height: 550px;
     display: block;
@@ -76,7 +72,7 @@ body {
 }
 
 td {
-    padding: var(--size-10) 6px;
+    padding: 0 6px;
     text-align: center;
 }
 
@@ -85,7 +81,6 @@ th {
     padding: var(--size-10) 6px;
     min-width: 120px;
     font-weight: bold;
-    font-size: 1.05em;
     text-align: center;
 }
 
@@ -111,6 +106,7 @@ th {
 }
 
 .table-container {
+    font-size: 1em;
     overflow: auto;
     margin: var(--size-22) 0px;
     border-radius: 8px;
@@ -130,7 +126,7 @@ th {
     background: var(--backg-color-contentBody);
     border-radius: 6px;
     padding: 6px var(--size-10);
-    font-size: 0.85rem;
+    font-size: 1em;
 }
 
 .flight-tips h3 {
@@ -144,6 +140,7 @@ th {
 .flight-tips li {
     margin-bottom: 8px;
 }
+
 
 .coming-soon-hero {
     position: relative;
