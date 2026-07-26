@@ -28,6 +28,12 @@
 
       <title>Touristic Moz - Provinces</title>
 
+      <link rel="icon" type="image/png" href="../imagens/logos/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="../imagens/logos/favicon.svg" />
+      <link rel="shortcut icon" href="../imagens/logos/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="../imagens/logos/apple-touch-icon.png" />
+      <link rel="manifest" href="../imagens/logos/site.webmanifest" />
+
       <link rel="stylesheet" href="../styles/consts.css" media="all">
       <link rel="stylesheet" href="../styles/constsQ.css">
       <link rel="stylesheet" href="../styles/indexStyle.css">
@@ -517,7 +523,8 @@
                   </article>
             </main>
             <aside>
-            <a href="../index.html" target="_self" rel="next">
+            
+            <a href="../index.html" rel="next">
                   <section class="categoria" id="idMainPage">
                         <h2>Mozambique</h2>
                         <div class="breveMensagem">
@@ -526,29 +533,42 @@
                   </section>
             </a>
 
-            <a href="natureza.html" target="_self" rel="next">
-                  <section class="categoria" id="idNatureza">
-                        <h2>Nature</h2>
-                        <div class="breveMensagem">
-                              <p>
-                                    The nature is part of the identity of Mozambique. It has the most beautiful landscapes.
-                              </p>
-                        </div>
-                  </section>
+
+            <a href="culinaria.html" rel="next">
+                <section class="categoria" id="idCulinariaCard">
+                    <h2>Culinaria</h2>
+                    <div class="breveMensagem">
+                        <p>
+                            Flavors of Mozambique
+                        </p>
+                    </div>
+                </section>
             </a>
 
-            <a href="directFligts_Table.html" target="_self" rel="next">
-                  <section class="categoria" id="idVoos">
-                        <h2>Flights</h2>
-                        <div class="breveMensagem">
-                              <p>
-                                    Your Gateway to Mozambique
-                              </p>
-                        </div>
-                  </section>
+            <a href="directFligts_Table.html" rel="next">
+                <section class="categoria" id="idVoosCard">
+                    <h2>Flights</h2>
+                    <div class="breveMensagem">
+                        <p>
+                            Your Gateway to Mozambique
+                        </p>
+                    </div>
+                </section>
             </a>
-      </aside>
+
+            <a href="natureza.html" rel="next">
+                <section class="categoria" id="idNaturezaCard">
+                    <h2>Nature</h2>
+                    <div class="breveMensagem">
+                        <p>
+                            Wildlife &amp; Landscapes
+                        </p>
+                    </div>
+                </section>
+            </a>
+        </aside>
       </div>
+      
 
       <!-- Footer igual em todas as páginas -->
       <footer class="footer">
@@ -556,7 +576,7 @@
             <nav class="footerNav">
                   <a href="../index.html">Home</a>
                   <a href="natureza.html">Nature</a>
-                  <!--<a href="culinaria.html">Culinaria</a>-->
+                  <a href="culinaria.html">Culinaria</a>
                   <a href="directFligts_Table.html">Flights</a>
             </nav>
       </footer>

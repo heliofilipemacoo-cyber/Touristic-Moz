@@ -276,28 +276,28 @@ strong {
     background-position: center;
 }
 
-.categoria#idProvincias {
+.categoria#idProvinciasCard {
     background-image: url("../imagens/praca-da-independencia-maputo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
 }
 
-.categoria#idNatureza {
+.categoria#idNaturezaCard {
     background-image: url("../imagens/river.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
 }
 
-.categoria#idCulinaria {
+.categoria#idCulinariaCard {
     background-image: url("../imagens/rajas_temperos.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.categoria#idVoos {
+.categoria#idVoosCard {
     background-image: url("../imagens/plane-window-sunset.webp");
       background-position: right center;
       background-size: cover;
