@@ -38,11 +38,21 @@
 </head>
 
 <body>
-    <a href="#IdPageNav">
+    
+     <div class="floatingIcons">
+
+    <a>
+         <div class="dev_message">
+             <img src="imagens/icons/unread_menssage.svg" alt="Back to top">
+         </div>
+     </a>
+        <a href="#IdPageNav">
         <div class="fastNaving">
             <img src="imagens/icons/arrow_up.svg" alt="Back to top">
         </div>
-    </a>
+        </a>
+     </div>
+    
     <nav class="naving">
         <a href="index.html" class="navHome">Touristic Moz</a>
     </nav>
@@ -426,33 +436,7 @@
             <a href="paginas/directFligts_Table.html">Flights</a>
         </nav>
     </footer>
-    <script>
-        const fastNaving = document.querySelector(".fastNaving");
-        window.addEventListener(
-            "scroll",
-            function () {
-                if (window.scrollY >= document.querySelector(".pageNav").scrollHeight && window.scrollY <= document.querySelector("main").scrollHeight) {
-                    fastNaving.classList.add("showShortCut");
-                } else {
-                    fastNaving.classList.remove("showShortCut");
-                }
-            }
-        )
-
-        const readMore_list = document.querySelectorAll(".readMore");
-        const plus_content_list = document.querySelectorAll(".plus_content");
-
-        function toggleShow(index) {
-            index--;
-            if (plus_content_list[index].classList.contains("show")) {
-                plus_content_list[index].classList.remove("show");
-                readMore_list[index].innerHTML = "<span>Read more +</span>";
-            } else {
-                plus_content_list[index].classList.add("show");
-                readMore_list[index].innerHTML = "<span>Read less -</span>";
-            }
-        }
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

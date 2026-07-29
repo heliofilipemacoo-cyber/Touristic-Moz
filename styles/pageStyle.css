@@ -31,35 +31,7 @@ aside {
     box-shadow: none;
 }
 
-.fastNaving.showShortCut {
-    opacity: .94;
-    box-shadow: 1px 4px 4px var(--commun-shadow-mid);
-    border: 1px solid var(--commun-color-black);
-    background-color: #272727;
-    transform: translateY(0px);
-}
 
-.fastNaving.showShortCut:hover {
-    background-color: #303030;
-    opacity: 1;
-}
-
-.fastNaving {
-    display: grid;
-    place-content: center;
-    position: fixed;
-    font-weight: bolder;
-    z-index: 999;
-    right: var(--size-12);
-    bottom: var(--size-12);
-    width: 55px;
-    height: 55px;
-    padding: 18px;
-    border-radius: 100%;
-    transition: all .3s;
-    color: transparent;
-    transform: translateY(60px);
-}
 
 body {
     overflow: auto;

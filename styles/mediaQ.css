@@ -1,20 +1,33 @@
 /* Medias Queres para a pagina index */
 @charset "UTF-8";
 @import url(constsQ.css);
+@media screen and (min-width: 319px) and (max-width: 480px) {
 
+    /* Mobile */
+    * {
+        font-size: 1.05em;
+    }
+
+    .floatingIcons div {
+        padding: 10px;
+    }
+
+    .map_iframe {
+        max-height: 300px;
+    }
+
+    .mainAboutMoz {
+        padding: var(--size-12);
+    }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     /* Tablets */
     * {
         font-size: 1.07em;
     }
-
-    .fastNaving {
-        right: 18px;
-        bottom: 18px;
-        width: 48px;
-        height: 48px;
-        padding: 18px;
+    .floatingIcons div {
+        padding: 12px;
     }
     .mainAboutMoz {
     padding: var(--size-16);
@@ -37,12 +50,8 @@
         font-size: 1.09em;
     }
 
-    .fastNaving {
-        right: 18px;
-        bottom: 18px;
-        width: 50px;
-        height: 50px;
-        padding: 18px;
+    .floatingIcons div {
+        padding: 14px;
     }
 
     .map_iframe {
@@ -69,12 +78,8 @@
     .naving{
         justify-content: center;
     }
-    .fastNaving {
-        right: var(--size-20);
-        bottom: var(--size-20);
-        width: 52px;
-        height: 52px;
-        padding: var(--size-20);
+    .floatingIcons div {
+        padding: 16px;
     }
 
     * {

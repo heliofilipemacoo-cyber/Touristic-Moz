@@ -402,5 +402,42 @@ aside > section{
 }
 
 
+.dev_message.showMessage {
+    opacity: .94;
+    box-shadow: 1px 4px 4px var(--commun-shadow-mid);
+    border: 1px solid var(--commun-color-black);
+    background-color: #272727;
+    transform: translateY(-60px);
+}
+
+.dev_message.showMessage:hover {
+    background-color: #303030;
+    opacity: 1;
+}
+
+.dev_message {
+    display: grid;
+    place-content: center;
+    position: fixed;
+    font-weight: bolder;
+    z-index: 999;
+    right: var(--size-12);
+    bottom: var(--size-28);
+    border-radius: 100%;
+    transition: all .3s;
+    transform: translateY(80px);
+    padding: 12px;
+    animation: message_loop 2s ease-in-out alternate infinite;
+}
+@keyframes message_loop {
+    from { transform: translateY(-52px); 
+        box-shadow: 0px 3px 3px var(--commun-shadow-mid);
+    }
+    to { transform: translateY(-60px); 
+        box-shadow: 2px 6px 5px var(--commun-shadow-low);
+    }
+}
+
+
 
 /* /////////////////////////////////////  Buld 1 */
