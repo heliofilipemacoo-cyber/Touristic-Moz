@@ -407,7 +407,8 @@ aside > section{
     box-shadow: 1px 4px 4px var(--commun-shadow-mid);
     border: 1px solid var(--commun-color-black);
     background-color: #272727;
-    transform: translateY(-60px);
+    transform: translateY(0px);
+    animation: message_loop 2s ease-in-out alternate infinite;
 }
 
 .dev_message.showMessage:hover {
@@ -418,24 +419,55 @@ aside > section{
 .dev_message {
     display: grid;
     place-content: center;
-    position: fixed;
+    background-color: transparent;
+    box-shadow: none;
     font-weight: bolder;
     z-index: 999;
-    right: var(--size-12);
-    bottom: var(--size-28);
     border-radius: 100%;
-    transition: all .3s;
-    transform: translateY(80px);
+    transition: all .25s ease;
     padding: 12px;
-    animation: message_loop 2s ease-in-out alternate infinite;
+    transform: translateY(140px);
 }
 @keyframes message_loop {
-    from { transform: translateY(-52px); 
+    from { transform: translateY(-14px);
         box-shadow: 0px 3px 3px var(--commun-shadow-mid);
     }
-    to { transform: translateY(-60px); 
+    to { transform: translateY(-18px); 
         box-shadow: 2px 6px 5px var(--commun-shadow-low);
     }
+}
+
+.dev_message_popUp {
+    position: fixed;
+    inset: 10% 10%;
+    z-index: 9999;
+
+    display: grid;
+    flex-direction: column;
+    align-items: end;
+    grid-template-rows: 5fr 1fr;
+    background-color: var(--backg-color-contentBody);
+    border-radius: 18px;
+    box-shadow: 6px 16px 18px var(--commun-shadow-deep);
+}
+
+.popup_buttons{
+    font-size: 1.2em;
+    background-color: transparent;
+    color: white;
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+}
+.popup_buttons button{
+    width: 100%;
+    padding: 12px;
+    border: 0
+}
+
+.dev_message_popUp_content{
+    padding: 35px 20px;
+    align-self: start;
 }
 
 

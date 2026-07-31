@@ -8,10 +8,6 @@
         font-size: 1.05em;
     }
 
-    .floatingIcons div {
-        padding: 10px;
-    }
-
     .map_iframe {
         max-height: 300px;
     }

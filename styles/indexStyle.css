@@ -21,7 +21,7 @@ header {
     box-shadow: 1px 4px 4px var(--commun-shadow-mid);
     border: 1px solid var(--commun-color-black);
     background-color: #272727;
-    transform: translateY(55px);
+    transform: translateY(8px);
 }
 
 .fastNaving.showShortCut:hover {
@@ -36,9 +36,9 @@ header {
     font-weight: bolder;
     z-index: 999;
     border-radius: 100%;
-    transition: all .3s;
+    transition: all .3s ease;
     color: transparent;
-    transform: translateY(180px);
+    transform: translateY(100px);
 }
 .floatingIcons{
     position: fixed;
