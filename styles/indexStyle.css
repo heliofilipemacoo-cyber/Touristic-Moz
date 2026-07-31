@@ -5,7 +5,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 .myLogo {
     color: var(--green-2);
     font-size: 1em;
@@ -272,7 +271,6 @@ strong {
     color: #FFB01F;
     text-decoration: underline;
 }
-
 
 /* Background Images */
 .hero {
