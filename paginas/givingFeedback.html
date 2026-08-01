@@ -20,16 +20,40 @@
       <link rel="stylesheet" href="../styles/indexStyle.css">
       <link rel="stylesheet" href="../styles/mediaQ.css">
       <link rel="stylesheet" href="../styles/pageStyle.css">
+      <style>
+            body {
+                  font-family: Arial, sans-serif;
+                  background-color: #f4f4f4;
+                  margin: 0;
+                  padding: 0;
+            }
+            .dialog {
+                  position: fixed;
+                  inset: 0;
+                  background: whitesmoke;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  color: #333;
+                  z-index: 0;
+            }
+            .dialog-content {
+                  z-index: 1;
+            }
+      </style>
 </head>
 
 <body>
-      <div class="Dialog_1">
+      <div class="dialog">
+            <div class="dialog-content">
+                  <h2>Feedback</h2>
+                  <p>Obrigado por nos fornecer o seu feedback! A sua opinião é muito importante para nós e ajuda-nos a melhorar os nossos serviços.</p>
+                  <button class="close-dialog">Fechar</button>
+            </div>
         
       </div>
-      <div class="Dialog_2">
+      <div class="dialog">
 
       </div>
-      <div class="Dialog_3">
+      <div class="dialog">
 
       </div>
       <script src="../js/tools.js"></script>
