@@ -33,15 +33,15 @@ function showDevMessage() {
     <div class="dev_message_popUp">
         <div class="dev_message_popUp_content">
             <h2>Fassanos desenvolver mais!</h2>
-            
-            <p>Com o seu <strong>FeedBack</strong>, podemos desenvolver e melhorar o site.</p>
-            <br> 
-            
-            <i>Icon de construtor</i>
-            
-            <br><br>
-            <p>Fale conosco, e com isso ajudenos a <strong>desenvolver</strong>, <strong>melhorar</strong> e <strong>inovar</strong>!</p>
-            <i>Nao pedimos dinhero, apenas a sua opniao</i>
+            <div>
+                <img src="/imagens/icons/writeComment.svg" alt="Icon de feedback" width="50" height="50">
+                <div>
+                    <p>Com o seu <strong>FeedBack</strong>, podemos desenvolver e melhorar o site.</p>
+                
+                    <p>Fale conosco, e com isso ajudenos a <strong>desenvolver</strong>, <strong>melhorar</strong> e <strong>inovar</strong>!</p>
+                    <i>Nao pedimos dinhero, apenas a sua opniao</i>
+                </div>
+            </div>
         </div>
         <div class="popup_buttons">
         <button id="dev_message_button_exit" style="border-bottom-left-radius: 18px;">Fechar</button>
@@ -54,7 +54,13 @@ function showDevMessage() {
     document.getElementById("dev_message_button_exit").addEventListener('click', function () {
         document.body.removeChild(popup);  
     });
+
+    window.addEventListener('scroll', function () {
+        document.body.removeChild(popup);
+    })
 }
+
+
 
 dev_message.addEventListener('click', function () {
         showDevMessage();

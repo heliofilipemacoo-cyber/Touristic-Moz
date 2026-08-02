@@ -20,7 +20,7 @@ header {
     opacity: .94;
     box-shadow: 1px 4px 4px var(--commun-shadow-mid);
     border: 1px solid var(--commun-color-black);
-    background-color: #272727;
+    background-color: var(--commun-color-darkGrey);
     transform: translateY(8px);
 }
 

@@ -21,42 +21,163 @@
       <link rel="stylesheet" href="../styles/mediaQ.css">
       <link rel="stylesheet" href="../styles/pageStyle.css">
       <style>
+            *{
+                  transition: 
+                  width 0.2s ease;
+            }
             body {
                   font-family: Arial, sans-serif;
-                  background-color: #f4f4f4;
+                  background-color: var(--background-color);
                   margin: 0;
                   padding: 0;
+                  width: 100vw;
+                  height: 100vh;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
             }
             .dialog {
-                  position: fixed;
-                  inset: 0;
-                  background: whitesmoke;
+                  max-width: 80%;
+                  border-radius: 10px;
+                  background: var(--dialog-background);
                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                  color: #333;
-                  z-index: 0;
             }
-            .dialog-content {
-                  z-index: 1;
+            .dialog_content {
+                  padding: 20px 15px;
+            }
+            .dialog_buttons {
+                  display: flex;
+                  justify-content: flex-end;
+                  padding: 10px 20px;
+                  border-top: 1px solid #ddd;
+            }
+            .dialog_buttons button {
+                  border: none;
+                  background-color: transparent;
+                  color: rgb(100, 100, 100);
+                  padding: 10px 20px;
+                  cursor: pointer;
+                  transition: all 0.3s ease-out;
+            }
+            .dialog_buttons button:hover {
+                  font-weight: bold;
+                  color: rgb(0, 0, 0);
+                  transform: scale(1.05);
+            }
+            @media (max-width: 600px) {
+                  .dialog {
+                        width: 90%;
+                  }
+                  .dialog_content {
+                        padding: 15px;
+                  }
+                  .dialog_buttons {
+                        padding: 10px 15px;
+                        flex-direction: column;
+                        align-items: stretch;
+                  }
+
+            }
+            @media (min-width: 601px) {
+                  .dialog {
+                        width: 60%;
+                  }
+                  .dialog_content {
+                        padding: 20px;
+                  }
+                  .dialog_buttons {
+                        flex-direction: row;
+                        justify-content: flex-end;
+                  }
             }
       </style>
 </head>
 
 <body>
       <div class="dialog">
-            <div class="dialog-content">
+            <div class="dialog_content">
                   <h2>Feedback</h2>
-                  <p>Obrigado por nos fornecer o seu feedback! A sua opinião é muito importante para nós e ajuda-nos a melhorar os nossos serviços.</p>
-                  <button class="close-dialog">Fechar</button>
+                  <br>
+                  <p>O seu feedback serve para que saibamos onde devemos nos esforcar, para que assim possamos fazer melhorias com mais rapidez e eficiencia.</p>
+                  <br>
+                  <br>
             </div>
-        
+            <div class="dialog_buttons">
+                  <button class="close-dialog">Voltar</button>
+                  <button class="go-dialog">Continuar</button>
+            </div>
       </div>
+     
       <div class="dialog">
-
+            <div class="dialog_content">
+                  <h2>Feedback 2</h2>
+                  <br>
+                  <p>O seu feedback serve para que saibamos onde devemos nos esforcar, para que assim possamos fazer melhorias com mais rapidez e eficiencia.</p>
+                  <br>
+                  <br>
+            </div>
+            <div class="dialog_buttons">
+                  <button class="close-dialog">Voltar</button>
+                  <button class="go-dialog">Continuar</button>
+            </div>
       </div>
-      <div class="dialog">
 
+      <div class="dialog">
+            <div class="dialog_content">
+                  <h2>Feedback 3</h2>
+                  <br>
+                  <p>O seu feedback serve para que saibamos onde devemos nos esforcar, para que assim possamos fazer melhorias com mais rapidez e eficiencia.</p>
+                  <br>
+                  <br>
+            </div>
+            <div class="dialog_buttons">
+                  <button class="close-dialog">Voltar</button>
+                  <button class="go-dialog">Continuar</button>
+            </div>
       </div>
       <script src="../js/tools.js"></script>
+      <script>
+            const dialogs = document.querySelectorAll('.dialog');
+            dialogs.forEach((dialog, index) => {
+                  if (index !== 0) {
+                        dialog.style.display = 'none';
+                  }
+            });
+
+            function closeDialog(index) {
+                  const dialog = document.querySelectorAll('.dialog');
+                  dialog[index].style.display = 'none';
+            }
+
+            document.querySelectorAll('.close-dialog').forEach((button, index) => {
+                  if (index === 0) {
+                        button.addEventListener('click', () => {
+                              window.history.back();
+                        });
+                  }
+                  button.addEventListener('click', () => {
+                        closeDialog(index);
+                  });
+            });
+
+            function showNextDialog(index) {
+                  const dialog = document.querySelectorAll('.dialog');
+                  if (index < dialog.length) {
+                        dialog[index].style.display = 'block';
+                  }
+            }
+
+            document.querySelectorAll('.go-dialog').forEach((button, index) => {
+                  button.addEventListener('click', () => {
+                        if (index === dialogs.length - 1) {
+                              window.history.back();
+                              return;
+                        }
+                        closeDialog(index);
+                        showNextDialog(index+1);
+                  });
+            });
+      </script>
 </body>
 
 </html>
