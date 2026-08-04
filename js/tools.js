@@ -67,9 +67,9 @@ dev_message.addEventListener('click', function () {
         dev_message.classList.remove("showMessage");
     })
 
-const intervalo = setInterval(() => {
-    dev_message.classList.add("showMessage");
-},  100000000 * 6000000 * 1000000000000000000000000000000000000);
+// const intervalo = setInterval(() => {
+//     dev_message.classList.add("showMessage");
+// },  100000000 * 6000000 * 1000000000000000000000000000000000000);
 
 function toggleShow(index) {
     index--;
